@@ -1665,7 +1665,7 @@ svg path {
   .address__content {
     background-color: #fff;
     margin: 0;
-    padding: 64px 74px 75px 112px; }
+    padding: 64px 74px 40px 112px; }
   .address__headline {
     padding: 0;
     margin-bottom: 16px; }
