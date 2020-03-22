@@ -1708,6 +1708,9 @@ svg path {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0;
     margin-top: 36px; }
   .address__content-icons {
@@ -1739,8 +1742,12 @@ svg path {
   .address .feedback__formletter-consent--confirm.m-address {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-right: 24px; }
   .address .feedback__checkbox.m-address {
     height: 50px; }
+  .address .feedback__formletter-consent--btn.m-address {
+    max-width: 174px;
+    height: 56px; }
 
 /*# sourceMappingURL=style.css.map */
