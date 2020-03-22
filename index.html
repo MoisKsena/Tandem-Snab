@@ -43,19 +43,9 @@
             <p  class="main-nav__burger-connection--name">Светлана Стахнёва</p>
             <p  class="main-nav__burger-connection--contacts">stakhnevasvetlana@gmail.com</p>
             <div class="feedback__form-icons">
-              <a target="about:blank" href="https://vk.com/id73746203" class="feedback__form-icons--vk">
-                <svg width="40" height="40">
-                  <use xlink:href="img/sprite.svg#vk"></use>
-                </svg>
-              </a>
-              <a target="about:blank" href="https://wa.me/<+89650412323>" class="feedback__form-icons--whatsapp">
-                <svg width="40" height="40">
-                  <use xlink:href="img/sprite.svg#whatsapp"></use>
-                </svg>
-              </a>
-              <a target="about:blank" href="https://www.facebook.com/sstakhneva/" class="feedback__form-icons--facebook">
-                <svg width="40" height="40">
-                  <use xlink:href="img/sprite.svg#facebook"></use>
+              <a target="about:blank" href="https://wa.me/79650296002" class="main-nav__icons--whatsapp">
+                <svg width="30" height="27">
+                  <use xlink:href="img/sprite.svg#whatsApp2"></use>
                 </svg>
               </a>
             </div>
@@ -377,7 +367,7 @@
                   data-val="true" 
                   data-val-regex="Номер телефона должен быть задан в следующем формате: +7 (999) 999-99-99" data-val-regex-pattern="\+7 \((\d{3})\) (\d{3})-(\d{2})-(\d{2})"
                   data-val-required="Поле Телефон должно быть заполнено"
-                  
+                  placeholder="+7 (___) ___–__–__*"
                    />
 
                   <span class="field-validation-valid" data-valmsg-for="tel" data-valmsg-replace="true"></span>
@@ -385,8 +375,9 @@
               <div class="feedback__formletter-personal--email">
                 <input id='email' type="email" name="email" class="feedback__formletter-personal--emailfield" 
                   data-val="true" 
-                  data-val-email="!!!!Укажите мыло!!!!"
+                  data-val-required="Укажите ваш e-mail адрес"
                   placeholder="Почта"
+                  required
                 /> 
                 <span class="field-validation-valid" data-valmsg-for="email" data-valmsg-replace="true"></span>
               </div>
@@ -415,7 +406,6 @@
 
               </div>
               
-               
               <label for="agree" class="personal"><a class="js-modal personal-text" href="#" onclick="return false;">Нажимая на кнопку вы подтверждаете, что<br />ознакомлены с политикой конфиденциальности</a></label>
             </div> 
           </div>
@@ -449,6 +439,7 @@
             
           </div>
           <button class="feedback__form-success--btn btn-close">ВЕРНУТЬСЯ НА САЙТ</button>
+          <div class="overlay"></div>
         </div>
   
         <div class="modal">
@@ -641,13 +632,74 @@
   </section>
 
   <section class="address" id="address">
-    <div class="contacts__content">
-      <h3 class="contacts__headline">Адрес студии звукозаписи</h3>
-      <p class="contacts__address">г. Санкт-Петербург, набережная Крюкова канала, 12</p>
-      <p class="contacts__address">Здание «Лендок»</p>
+    <div class="address__map">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5d2b062fc1d4d35ac16653b80c5a9412386833c7e5392427aef9033547cc7f90&amp;source=constructor" frameborder="0"></iframe>    
     </div>
-    <div class="contacts__map">
-      <iframe class="ymaps-layers-pane" src="https://yandex.ru/map-widget/v1/?um=constructor%3A32da50290c3ee694d943d6dca8a122c6dbbd1387faf044bc8754ac0847825116&amp;source=constructor" frameborder="0"></iframe>     
+
+    <div class="address__content">
+      <h2 class="address__headline">Wood & Metal Lab</h2>
+      <p class="address__sign">мастерская индивидуального производства мебели и предметов интерьера</p>
+      <div class="address__content-contacts">
+        <div>
+          <p class="address__content-contacts--bold">+7 (965) 029-60-02</p>
+          <p>woodmatallab@yandex.ru</p>
+        </div>
+        <div>
+          <p>пн-пт 10:00-19:00</p>
+          <p>сб 11:00-17:00</p>
+        </div>
+      </div>
+      <div class="address__content-address">
+        <div>
+          <p class="address__content-contacts--bold m-margin">Офис</p>
+
+          <p>г. Санкт-Петербург,</p>
+          <p>метро Нарвская,</p>
+          <p>Балтийская улица, 51</p>
+        </div>
+        <div>
+          <p class="address__content-contacts--bold m-margin">Производство</p>
+
+          <p>г. Санкт-Петербург,</p>
+          <p>посёлок Стрельна,</p>
+          <p>ул. Фронтовая 3</p>
+        </div>
+      </div>
+      <h3>Осталисть вопросы?</h3>
+      <div class="address__content-communic">
+        <div class="feedback__formletter-personal--tel">
+          <!-- <label for="tel">Телефон</label> -->
+          <input type="text" id="tel" name="tel" 
+            data-inputmask="'mask': '+7 (999) 999-99-99'" inputmode="numeric"
+            class="feedback__formletter-personal--telfield m-address" 
+            data-val="true" 
+            data-val-regex="Номер телефона должен быть задан в следующем формате: +7 (999) 999-99-99" data-val-regex-pattern="\+7 \((\d{3})\) (\d{3})-(\d{2})-(\d{2})"
+            placeholder="+7 (___) ___–__–__*"            
+             />
+
+            <span class="field-validation-valid" data-valmsg-for="tel" data-valmsg-replace="true"></span>
+        </div> 
+        <span class="feedback__formletter-consent--confirm m-address">
+          <input type="checkbox" name="email" id="chack_email" class="feedback__checkbox m-address"/>
+          <label for="chack_email" class="personal-social m-address">Связаться по&nbsp;WhatsApp</label>
+        </span> 
+
+        <button class="feedback__formletter-consent--btn">СВЯЗАТЬСЯ</button>
+      </div>
+      <label for="agree" class="personal"><a class="js-modal personal-text" href="#" onclick="return false;">Нажимая на кнопку вы подтверждаете, что<br />ознакомлены с политикой конфиденциальности</a></label>
+      <div class="address__content-icons">
+        <a target="about:blank" href="" class="address__content-icons--instargam">
+          <svg width="30" height="30">
+            <use xlink:href="img/sprite.svg#instagram"></use>
+          </svg>
+        </a>
+
+        <a target="about:blank" href="https://wa.me/79650296002" class="address__content-icons--whatsapp">
+          <svg width="30" height="27">
+            <use xlink:href="img/sprite.svg#whatsApp2"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -665,6 +717,5 @@
       }
     });
   </script> 
-
 </body>
 </html>
