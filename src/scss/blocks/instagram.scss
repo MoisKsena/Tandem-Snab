@@ -1,0 +1,25 @@
+.instagram {
+  margin: 0 24px;
+  padding: 0;
+  position: relative;
+
+  &__gallery {
+    height: 312px;
+
+    .swiper-container.m-instagram {
+      height: 312px;
+    }
+  }
+
+  
+}
+
+.swiper-btnprev.m-instagram {
+  top: 0;
+  left: 85%;
+}
+
+.swiper-btnnext.m-instagram {
+  top: 0;
+  left: 90%;
+}

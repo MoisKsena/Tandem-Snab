@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  list-style-type: none;
+}
+
+html, body {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  position: relative;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  color: $black;
+  background-color: $grey-bcg;
+}
+
+h2 {
+  font-family: $font-family-title;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  color: $black;
+
+  @media (max-width: 768px) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+h3 {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img {
+  height: auto;
+}
+
+svg path {
+  stroke:inherit;
+  stroke-width:inherit;
+  fill:inherit;
+}
+
+.btn {
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background-color: #000;
+  text-transform: uppercase;
+  height: 80px;
+  outline: none;
+  width: 352px;
+}
+
+.btn:hover {
+  background-color: $green;
+  color: $black;
+}
+

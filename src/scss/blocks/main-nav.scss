@@ -1,0 +1,256 @@
+.main-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  &__burger {
+    display: none;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 768px) {
+      display: flex;
+      position: absolute;
+      width: 20px;
+      top: 30px;
+      right: 15px;
+      flex-wrap: wrap;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+    }
+
+    span.line {
+      display: inline-block;
+      margin-bottom: 4px;
+      background-color: black;
+      width: 100%;
+      height: 3px;
+    }
+  }
+
+  &__burger:hover {
+    background-color: transparent;
+  }
+
+  &__burger-menu {
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    line-height: 1.5;
+    z-index: 3;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__burger-list {
+    display: flex; 
+    margin: 0;
+    padding-bottom: 30px;
+    flex-direction: column;
+  }
+
+  &__burger-item {
+    margin: 0;
+    padding-bottom: 22px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 146.28%;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
+  }
+
+  &__burger-link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color:#000;
+  }
+
+  &__burger-link:hover {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: $green;
+    font-weight: 700;
+  }
+
+  &__burger-connection {
+    margin: 0;
+    padding-left: 43px;
+
+    &--sign {
+      margin: 0;
+      padding-bottom: 30px;
+      font-weight: 500;
+      line-height: 23px;
+      color: $red;
+    }
+
+    &--sign p {
+      margin: 0;
+      padding: 0;
+      line-height: 150%;
+    }
+
+    &--name {
+      margin: 0;
+      padding: 0;
+      color: #0000;
+      font-weight: 500;
+      font-size: 15px;
+    }
+    
+    &--contacts {
+      margin: 0;
+      padding-bottom: 40px;
+      color: #000;
+      line-height: 160%;
+    }
+  }
+
+  &__burger-address {
+    margin: 0;
+    padding-left: 43px;
+    padding-top: 56px;
+
+    &--headline {
+      margin: 0;
+      padding-bottom: 30px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      color: $red;
+    }
+
+    &--headline p {
+      margin: 0;
+      padding: 0;
+      line-height: 150%;
+    }
+
+    &--text {
+      margin: 0;
+      padding: 0;
+      color: #000;
+      font-size: 15px;
+      line-height: 160%;
+    }
+  }
+  
+  &__list {
+    display: flex;
+    font-family: $font-family;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    @media (max-width: 769px) {
+      display: none;
+    }
+  }
+  
+  &__item {
+    margin: 0;
+    padding-right: 42px;
+    font-size: 24px;
+    line-height: 28px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__item:hover {
+    color: $green;
+    transform: translateY(-10px);
+  }
+
+  &__item:last-child {
+    padding-right: 0;
+  }
+
+  &__link:hover {
+    color: $green;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    list-style: none;
+    color: $black;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    @media (max-width: 1200px) {
+      font-size: 12px;
+    }
+  }
+  
+  &__icons {
+    display: flex;
+    height: fit-content;
+
+    @media (max-width: 769px) { 
+      
+    }
+
+    &--whatsapp{
+      margin: 0;
+      padding-right: 34px;
+    }
+  }
+
+  &__icons svg {
+    fill: #232323;
+  }
+
+  &__icons svg:hover {
+    fill: #2FA06A;
+  } 
+
+  &__item--active {
+    color: $green;
+  }
+}
+
+.icon {
+  color: black;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+
+  &:hover {
+    color: $green;
+  } 
+}
+
+.close:before, .close:after {
+  position: absolute;
+  content: ' ';
+  right: 8px;
+  top: 0;
+  height: 24px;
+  width: 3px;
+  background-color: black;
+  cursor: pointer;
+  outline: none;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
