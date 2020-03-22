@@ -172,6 +172,7 @@
   }
 
   &__item:hover {
+    font-weight: 500;
     color: $green;
     transform: translateY(-10px);
   }

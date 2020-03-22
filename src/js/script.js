@@ -114,10 +114,10 @@ function closePopup() {
 };
 
 var page = $(".js-modal");
-page.on('click', event => {
-  event.preventDefault();
+  page.on('click', event => {
+    event.preventDefault();
 
-  showPopup('.feedback__modal');
+    showPopup('.feedback__modal');
 
 });
 
