@@ -649,7 +649,9 @@ svg path {
     margin: 0;
     padding-right: 42px;
     font-size: 24px;
+    font-weight: 500;
     line-height: 28px;
+    color: #232323;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
   .main-nav__item:hover {
@@ -662,6 +664,7 @@ svg path {
     color: #2FA06A; }
   .main-nav__link {
     font-size: 14px;
+    font-weight: 500;
     line-height: 17px;
     letter-spacing: 0.08em;
     list-style: none;
@@ -671,6 +674,9 @@ svg path {
     @media (max-width: 1200px) {
       .main-nav__link {
         font-size: 12px; } }
+  .main-nav__link.main-nav__item--active {
+    font-weight: 500;
+    color: #2FA06A; }
   .main-nav__icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -685,8 +691,6 @@ svg path {
     fill: #232323; }
   .main-nav__icons svg:hover {
     fill: #2FA06A; }
-  .main-nav__item--active {
-    color: #2FA06A; }
 
 .icon {
   color: black;
@@ -1022,6 +1026,8 @@ svg path {
     margin: 56px 112px 0;
     padding: 0; }
   .ideas__content-idea {
+    display: none; }
+  .ideas__content-idea.m-active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
