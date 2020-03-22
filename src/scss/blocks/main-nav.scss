@@ -165,7 +165,9 @@
     margin: 0;
     padding-right: 42px;
     font-size: 24px;
+    font-weight: 500;
     line-height: 28px;
+    color: $black;
     transition: all 0.5s ease-in-out;
   }
 
@@ -184,6 +186,7 @@
 
   &__link {
     font-size: 14px;
+    font-weight: 500;
     line-height: 17px;
     letter-spacing: 0.08em;
     list-style: none;
@@ -194,6 +197,11 @@
     @media (max-width: 1200px) {
       font-size: 12px;
     }
+  }
+
+  &__link.main-nav__item--active {
+    font-weight: 500;
+    color: $green;
   }
   
   &__icons {
@@ -217,10 +225,6 @@
   &__icons svg:hover {
     fill: #2FA06A;
   } 
-
-  &__item--active {
-    color: $green;
-  }
 }
 
 .icon {
