@@ -1,9 +1,16 @@
 .instagram {
-  margin: 0 24px;
+  margin-top: 115px;
   padding: 0;
   position: relative;
 
+  &__title {
+    margin: 0;
+    padding-left: 105px;
+    padding-bottom: 26px;
+  }
+
   &__gallery {
+    padding: 0 24px;
     height: 312px;
 
     .swiper-container.m-instagram {
@@ -15,11 +22,11 @@
 }
 
 .swiper-btnprev.m-instagram {
-  top: 0;
-  left: 85%;
+  top: 12px;
+  left: 83%;
 }
 
 .swiper-btnnext.m-instagram {
-  top: 0;
-  left: 90%;
+  top: 12px;
+  left: 88%;
 }

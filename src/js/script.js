@@ -45,24 +45,21 @@ $('.main-nav__burger').click(function()
 
 //плавающие меню
 
-$(function(){
-  $(window).scroll(function(){
+// $(function(){
+//   $(window).scroll(function(){
      
-      if($(this).scrollTop() > 937) {
-        $("div.scrollmenu").fadeIn();
-        $("div.scrollmenu").css('background-color', '#E5E5E5');
-      } 
-      else if ($(this).scrollTop() < 100){
-        $("div.scrollmenu").fadeIn();
-        $("div.scrollmenu").css('background-color', 'transparent');
-      } else {
-        $("div.scrollmenu").fadeOut(200);
-      }
- });
-});
-
-
-
+//       if($(this).scrollTop() > 937) {
+//         $("div.scrollmenu").fadeIn();
+//         $("div.scrollmenu").css('background-color', '#E5E5E5');
+//       } 
+//       else if ($(this).scrollTop() < 100){
+//         $("div.scrollmenu").fadeIn();
+//         $("div.scrollmenu").css('background-color', 'transparent');
+//       } else {
+//         $("div.scrollmenu").fadeOut(200);
+//       }
+//  });
+// });
 
 
 //Swiper 
@@ -170,7 +167,7 @@ function initFormSubmitHandler()
 {
   $("form").data("validator").settings.submitHandler = function()
   {
-    //showPopup('.feedback__form-success');
+   
     $('.feedback__formletter').addClass('m-active');
     $('.feedback__form-success').removeClass('m-active');
 
@@ -183,7 +180,7 @@ function initFormSubmitHandler()
     // });
     return false;
 
-  }
+   }
 }
 
 jQuery(document).ready(function() {

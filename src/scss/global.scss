@@ -23,6 +23,11 @@ body {
   background-color: $grey-bcg;
 }
 
+.wrapper {
+  max-width: 1368px;
+  margin: 0 auto;
+}
+
 h2 {
   font-family: $font-family-title;
   font-style: normal;
@@ -70,7 +75,10 @@ svg path {
   text-transform: uppercase;
   height: 80px;
   outline: none;
-  width: 352px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .btn:hover {

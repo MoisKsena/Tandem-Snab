@@ -1,6 +1,7 @@
 .about {
   padding: 0;
   margin-top: 96px;
+  padding-left: 24px;
 
   &__gallery {
     align-items: flex-end;
@@ -23,22 +24,17 @@
     background-color: $white;
     display: flex;
     justify-content: center;
-    height: 100%;
-    width: 66.66%;
+    padding: 64px 158px 166px 312px;
+    margin: 0;
+    height: 576px;
+    width: 895px;
   }
 
   &__gallery-descriptions-wrapper {
-    height: 100%;
     position: relative;
-    width: 424px;
   }
-
-  &__gallery-demo {
-    height: 100%;
-  }
-
   &__gallery-demo-descr {
-    padding-top: 64px;
+    padding: 0;
     margin: 0;
   }
 
@@ -55,7 +51,8 @@
     font-family: $font-family;
     font-size: 16px;
     line-height: 24px;
-    padding: 0;
+    margin: 0;
+    padding: 24px 0;
   }
 
   &__process {
@@ -76,12 +73,19 @@
     height: fit-content;
   }
 
-  &__process-block-title,
+  &__process-block-title {
+    text-align: center;
+    margin: 0;
+    padding: 39px 0 24px;
+  }
+
   &__process-block-text {
     font-family: $font-family;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
+    margin: 0;
+    padding: 0;
   }
 
   &__process-block-text p {

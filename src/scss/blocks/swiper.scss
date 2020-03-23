@@ -16,7 +16,7 @@
 .swiper-btnnext {
   position: absolute;
   left: 50px;
-  bottom: 96px;
+  bottom: -50px;
   cursor: pointer;
   margin: 0;
   padding: 0;
@@ -41,12 +41,16 @@
   &--color:hover {
     fill: $green;
   }
+
+  .swiper-button-disabled {
+    fill: #6D6D6D;
+  }
 }
 
 .swiper-btnprev {
   position: absolute;
   left: 0;
-  bottom: 96px;
+  bottom: -50px;
   cursor: pointer;
   margin: 0;
   padding: 0;
@@ -71,7 +75,13 @@
   &--color:hover {
     fill: #2FA06A;
   }
+
+  .swiper-button-disabled {
+    fill: #6D6D6D;
+  }
 }
+
+
 
 // .swiper-pagination-bullet-active {
 //   opacity: 1;
