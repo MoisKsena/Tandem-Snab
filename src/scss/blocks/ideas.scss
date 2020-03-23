@@ -141,38 +141,60 @@
     margin-bottom: 24px;
   }
 
+//картинки к экранам
   &__content-idea-block.m-block-idea-2.m-tables {
-    background-image: url(../img/about-idea-2.jpg);
+    background-image: url(../img/tables-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 392px;
   }
 
   &__content-idea-block.m-block-idea-2.m-console {
-    // background-image: url(../img/about-idea-2.jpg);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    background-color: green;
+    background-image: url(../img/console-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 392px;
   }
 
-  &__content-idea-block.m-block-idea-3 {
-    background-image: url(../img/about-idea-3.jpg);
+  &__content-idea-block.m-block-idea-3.m-tables {
+    background-image: url(../img/tables-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 296px;
     margin-bottom: 24px;
   }
 
-  &__content-idea-block.m-block-idea-4 {
-    background-image: url(../img/about-idea-4.jpg);
+  &__content-idea-block.m-block-idea-3.m-console {
+    background-image: url(../img/console-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 296px;
+    margin-bottom: 24px;
+  }
+
+  &__content-idea-block.m-block-idea-4.m-tables {
+    background-image: url(../img/tables-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 312px;
   }
 
-  &__content-idea-block.m-block-idea-5 {
-    background-image: url(../img/about-idea-5.jpg);
+  &__content-idea-block.m-block-idea-4.m-console {
+    background-image: url(../img/console-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 312px;
+  }
+
+  &__content-idea-block.m-block-idea-5.m-tables {
+    background-image: url(../img/tables-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 632px;
+  }
+
+  &__content-idea-block.m-block-idea-5.m-console {
+    background-image: url(../img/console-4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 632px;

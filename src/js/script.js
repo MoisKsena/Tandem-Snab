@@ -78,19 +78,22 @@ function initSwipers(){
 //вложеный файл
 
 let inputs = document.querySelectorAll('.input__file');
-Array.prototype.forEach.call(inputs, function (input) {
+Array.prototype.forEach.call(inputs, function fileInput (input) {
   let label = input.nextElementSibling,
     labelVal = label.querySelector('.input__file-button-text').innerText;
 
   input.addEventListener('change', function (e) {
     let countFiles = '';
-    if (this.files && this.files.length >= 1)
+    if (this.files && this.files.length >= 1) {
       countFiles = this.files.length;
-
-    if (countFiles)
+    };
+    if (countFiles) {
+      label.querySelector('.input__file-button-text').classList.add('m-active');
       label.querySelector('.input__file-button-text').innerText = countFiles;
-    else
+    } else {
+      label.querySelector('.input__file-button-text').classList.add('m-active');
       label.querySelector('.input__file-button-text').innerText = labelVal;
+    }
   });
 });
 
@@ -144,9 +147,19 @@ function initFormSubmitHandler()
 {
   $("form").data("validator").settings.submitHandler = function()
   {
-    showPopup('.feedback__form-success');
+    //showPopup('.feedback__form-success');
+    $('.feedback__formletter').addClass('m-active');
+    $('.feedback__form-success').removeClass('m-active');
 
+    // $('.btn-close-success').on('click',event => {
+    //   //event.preventDefault();
+    //   if( $('.feedback__form-success').hasClass('m-active')) {
+    //     this.removeClass('m-active');
+    //     $('.feedback__form-success').addClass('m-active');
+    //   } 
+    // });
     return false;
+
   }
 }
 
@@ -157,4 +170,5 @@ jQuery(document).ready(function() {
   initTabs();
   initSwipers(); //swiper
   initFormSubmitHandler();  
+  fileInput();
 });
