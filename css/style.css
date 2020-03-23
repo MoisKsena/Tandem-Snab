@@ -1618,6 +1618,10 @@ svg path {
   z-index: 90;
   display: none; }
 
+input:checked + label:before {
+  background: url(../../img/checkbox.svg) no-repeat;
+  background-size: cover; }
+
 .input__file-button-text {
   line-height: 1;
   margin-top: 1px; }
