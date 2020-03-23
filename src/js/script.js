@@ -43,6 +43,28 @@ $('.main-nav__burger').click(function()
     });
   }
 
+//плавающие меню
+
+$(function(){
+  $(window).scroll(function(){
+     
+      if($(this).scrollTop() > 937) {
+        $("div.scrollmenu").fadeIn();
+        $("div.scrollmenu").css('background-color', '#E5E5E5');
+      } 
+      else if ($(this).scrollTop() < 100){
+        $("div.scrollmenu").fadeIn();
+        $("div.scrollmenu").css('background-color', 'transparent');
+      } else {
+        $("div.scrollmenu").fadeOut(200);
+      }
+ });
+});
+
+
+
+
+
 //Swiper 
 
 var swipers = {};
@@ -78,7 +100,7 @@ function initSwipers(){
 //вложеный файл
 
 let inputs = document.querySelectorAll('.input__file');
-Array.prototype.forEach.call(inputs, function fileInput (input) {
+Array.prototype.forEach.call(inputs, function (input) {
   let label = input.nextElementSibling,
     labelVal = label.querySelector('.input__file-button-text').innerText;
 
@@ -90,10 +112,11 @@ Array.prototype.forEach.call(inputs, function fileInput (input) {
     if (countFiles) {
       label.querySelector('.input__file-button-text').classList.add('m-active');
       label.querySelector('.input__file-button-text').innerText = countFiles;
-    } else {
-      label.querySelector('.input__file-button-text').classList.add('m-active');
-      label.querySelector('.input__file-button-text').innerText = labelVal;
-    }
+    } 
+    // else {
+    //   label.querySelector('.input__file-button-text').classList.add('m-active');
+    //   label.querySelector('.input__file-button-text').innerText = labelVal;
+    // }
   });
 });
 
@@ -169,6 +192,5 @@ jQuery(document).ready(function() {
   initLinks();
   initTabs();
   initSwipers(); //swiper
-  initFormSubmitHandler();  
-  fileInput();
+  initFormSubmitHandler(); 
 });

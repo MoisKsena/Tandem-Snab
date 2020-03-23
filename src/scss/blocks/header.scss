@@ -54,10 +54,12 @@
     display: flex;
     //position: relative;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
+    z-index: 1000;
     padding-left: 80px;
     padding-right: 22px;
-    margin-top: 30px;
+    top: 30px;
+    left: 0;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
