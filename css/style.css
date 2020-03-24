@@ -1438,7 +1438,7 @@ svg path {
       left: 0;
       top: 4px; }
     .feedback__formletter-consent--confirm input:checked + label:before {
-      background: url(../../img/checkbox.svg) no-repeat;
+      background: url(../img/checkbox.svg) no-repeat;
       background-size: cover; }
     .feedback__formletter-consent--send {
       display: -webkit-box;
@@ -1733,17 +1733,11 @@ svg path {
   line-height: 1;
   margin-top: 1px; }
 
-:focus::-webkit-input-placeholder {
-  color: transparent; }
+.input__file-icon {
+  color: #232323; }
 
-:focus::-moz-placeholder {
-  color: transparent; }
-
-:focus:-moz-placeholder {
-  color: transparent; }
-
-:focus:-ms-input-placeholder {
-  color: transparent; }
+.input__file-icon:hover {
+  color: #2FA06A; }
 
 .delivery {
   padding: 0;
