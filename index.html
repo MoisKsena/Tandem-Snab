@@ -465,7 +465,7 @@
             <div class="feedback__formletter-personal" style="border: none;">
               <div class="feedback__formletter-personal--name">
                 <!-- <label for="name">Имя</label>  -->
-                <input id="name" type="text" name="name" minlength="3" data-val="true" data-val-required="Укажите ваше имя" class="feedback__formletter-personal--namefield" placeholder="Ваше имя*"/>
+                <input id="name" type="text" name="name" minlength="3" data-val="true" data-val-required="укажите ваше имя" class="feedback__formletter-personal--namefield" placeholder="Ваше имя*"/>
                 <span class="field-validation-valid" data-valmsg-for="name" data-valmsg-replace="true"></span>
               </div>
               <div class="feedback__formletter-personal--tel">
@@ -474,8 +474,8 @@
                   data-inputmask="'mask': '+7 (999) 999-99-99'" inputmode="numeric"
                   class="feedback__formletter-personal--telfield" 
                   data-val="true" 
-                  data-val-regex="Номер телефона должен быть задан в следующем формате: +7 (999) 999-99-99" data-val-regex-pattern="\+7 \((\d{3})\) (\d{3})-(\d{2})-(\d{2})"
-                  data-val-required="Поле Телефон должно быть заполнено"
+                  data-val-regex-pattern="\+7 \((\d{3})\) (\d{3})-(\d{2})-(\d{2})"
+                  data-val-required="заполнени поле Телефон"
                   placeholder="+7 (___) ___–__–__*"
                    />
                   <span class="field-validation-valid" data-valmsg-for="tel" data-valmsg-replace="true"></span>
@@ -483,7 +483,7 @@
               <div class="feedback__formletter-personal--email">
                 <input id='email' type="email" name="email" class="feedback__formletter-personal--emailfield" 
                   data-val="true" 
-                  data-val-required="Укажите ваш e-mail адрес"
+                  data-val-required="укажите ваш e-mail"
                   placeholder="Почта"
                 /> 
                 <span class="field-validation-valid" data-valmsg-for="email" data-valmsg-replace="true"></span>
