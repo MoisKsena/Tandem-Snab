@@ -17,7 +17,7 @@
     padding: 0;
     margin-right: 136px;
     padding: 67px 89px 68px 137px;
-    height: 630px;
+    //height: 630px;
     position: relative;
 
     @media (max-width: 1280px) {
@@ -237,7 +237,7 @@
     }
 
     &--confirm input:checked + label:before {
-      background: url(../../img/checkbox.svg) no-repeat;
+      background: url(../img/checkbox.svg) no-repeat;
       background-size: cover;
     }
 
@@ -575,18 +575,26 @@
   margin-top: 1px;
 }
 
-:focus::-webkit-input-placeholder {
-  color: transparent
+.input__file-icon {
+  color: $black;
 }
+
+.input__file-icon:hover {
+ color: $green;
+}
+
+// :focus::-webkit-input-placeholder {
+//   color: transparent
+// }
  
-:focus::-moz-placeholder {
-  color: transparent
-}
+// :focus::-moz-placeholder {
+//   color: transparent
+// }
  
-:focus:-moz-placeholder {
-  color: transparent
-}
+// :focus:-moz-placeholder {
+//   color: transparent
+// }
  
-:focus:-ms-input-placeholder {
-  color: transparent
-}
+// :focus:-ms-input-placeholder {
+//   color: transparent
+// }

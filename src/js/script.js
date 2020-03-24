@@ -17,7 +17,7 @@ $('.main-nav__burger').click(function()
     toggleMenu();
   });
 
-
+//menu Tabs
   function initLinks()
   {
     $('.main-nav__link', 'ul.main-nav__list').click(function (evt)
@@ -42,6 +42,32 @@ $('.main-nav__burger').click(function()
       $(tabIdSelector).addClass('m-active');
     });
   }
+
+
+//menu scroll
+
+function initScroll(){
+$(window).scroll(function() {
+  let windscroll = $(window).scrollTop();
+  if (windscroll >= 100) {
+      $('section').each(function(i) {
+          if ($(this).position().top <= windscroll - 20) {
+              $('#headerMenu a.main-nav__link').removeClass('main-nav__item--active');
+              $('#headerMenu a').eq(i).addClass('main-nav__item--active');
+          }
+      });
+
+  } else {
+
+      $('#headerMenu a.main-nav__link', '#headerMenu').removeClass('main-nav__item--active');
+      //$('nav a:first').addClass('main-nav__item--active');
+  }
+
+}).scroll();
+}
+
+
+
 
 //плавающие меню
 
@@ -108,10 +134,6 @@ Array.prototype.forEach.call(inputs, function (input) {
       label.querySelector('.input__file-button-text').classList.add('m-active');
       label.querySelector('.input__file-button-text').innerText = countFiles;
     } 
-    // else {
-    //   label.querySelector('.input__file-button-text').classList.add('m-active');
-    //   label.querySelector('.input__file-button-text').innerText = labelVal;
-    // }
   });
 });
 
@@ -166,6 +188,8 @@ function initFormSubmitHandler()
   $("form").data("validator").settings.submitHandler = function()
   {
   
+    $('.feedback__formletter').addClass('m-active');
+    $('.feedback__form-success').removeClass('m-active');
     return false;
 
    }
@@ -178,4 +202,5 @@ jQuery(document).ready(function() {
   initTabs();
   initSwipers(); //swiper
   initFormSubmitHandler(); 
+  initScroll();
 });
