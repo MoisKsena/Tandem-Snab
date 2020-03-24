@@ -16,7 +16,7 @@
     justify-content: space-between;
     padding: 0;
     margin-right: 136px;
-    padding: 67px 89px 68px 137px;
+    padding: 67px 90px 68px 130px;
     //height: 630px;
     position: relative;
 
@@ -291,8 +291,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0;
-    padding: 0 96px;
+    margin: 0 auto;
+    padding: 0;
     background-color: #fff;
     z-index: 100;
     width: 55%;
@@ -306,14 +306,12 @@
 
     &--text {
       margin: 0;
-      padding: 0 10px; 
-      padding-bottom: 66px;
-      color: #4F4F4F;
+      padding: 0; 
     }
 
     &--name {
       margin: 0;
-      padding-bottom: 30px;
+      padding-bottom: 60px;
       font-style: normal;
       font-weight: 300;
       font-size: 30px;
@@ -326,15 +324,20 @@
 
     &--sign {
       margin: 0;
-      padding: 0;
-      font-style: normal;
-      font-weight: normal;
+      padding-top: 21px;
+      font-weight: 500;
       font-size: 18px;
-      line-height: 180%;
+      line-height: 22px;
       text-align: center;
 
       @media (min-width: 768px) {
       }
+    }
+
+    &--sign.m-bold {
+      padding: 0;
+      font-size: 24px;
+      line-height: 29px;
     }
 
     &--btn {

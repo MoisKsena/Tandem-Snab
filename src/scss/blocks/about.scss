@@ -1,7 +1,6 @@
 .about {
+  margin: 0;
   padding: 0;
-  margin-top: 96px;
-  padding-left: 24px;
 
   &__gallery {
     align-items: flex-end;
@@ -15,7 +14,7 @@
     bottom: 0;
     height: 489px;
     position: absolute;
-    left: 0;
+    left: 24px;
     width: 648px;
   }
 
@@ -47,12 +46,21 @@
     background: transparent;
   }
 
+  &__gallery-demo-text-wrapper {
+    height: 192px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 24px;
+  }
+
   &__gallery-demo-text {
     font-family: $font-family;
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-    padding: 24px 0;
+    padding: 0;
   }
 
   &__process {
