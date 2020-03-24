@@ -73,7 +73,6 @@ function initSwipers(){
     spaceBetween: 15,
     slidesPerGroup: 1,
     loop: false,
-    //loopFillGroupWithBlank: true,
     navigation: {
       nextEl: '.swiper-btnnext',
       prevEl: '.swiper-btnprev',
@@ -85,10 +84,9 @@ function initSwipers(){
     spaceBetween: 23,
     slidesPerGroup: 1,
     loop: true,
-    //loopFillGroupWithBlank: true,
     navigation: {
-      nextEl: '.swiper-btnnext',
-      prevEl: '.swiper-btnprev',
+      nextEl: '.swiper-btnnext-instagram',
+      prevEl: '.swiper-btnprev-instagram',
     },
   });
 
@@ -167,17 +165,7 @@ function initFormSubmitHandler()
 {
   $("form").data("validator").settings.submitHandler = function()
   {
-   
-    $('.feedback__formletter').addClass('m-active');
-    $('.feedback__form-success').removeClass('m-active');
-
-    // $('.btn-close-success').on('click',event => {
-    //   //event.preventDefault();
-    //   if( $('.feedback__form-success').hasClass('m-active')) {
-    //     this.removeClass('m-active');
-    //     $('.feedback__form-success').addClass('m-active');
-    //   } 
-    // });
+  
     return false;
 
    }

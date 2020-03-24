@@ -392,7 +392,7 @@
 
         <div class="about__gallery-descriptions">
           <div class="about__gallery-descriptions-wrapper">
-            <div class="swiper-btnprev">
+            <div class="swiper-btnprev swiper-button-disabled">
               <svg class="swiper-btnprev--color">
                 <use xlink:href="img/sprite.svg#btn-left"></use>
               </svg>
@@ -494,8 +494,8 @@
             <div class="feedback__formletter-consent"> 
  
               <span class="feedback__formletter-consent--confirm">
-                <input type="checkbox" id="check_social" class="feedback__checkbox"/>
-                <label for="check_social" class="personal-social">Свяжитесь со мной по WhatsApp</label>
+                <input type="checkbox" name="agree" id="agree" class="feedback__checkbox"/>
+                <label  for="agree" class="personal-social">Свяжитесь со мной по WhatsApp</label>
               </span> 
 
               <div class="feedback__formletter-consent--send">
@@ -510,8 +510,7 @@
                 </div>
 
               </div>
-              
-              <label for="agree" class="personal"><a class="js-modal personal-text" href="#" onclick="return false;">Нажимая на кнопку вы подтверждаете, что<br />ознакомлены с политикой конфиденциальности</a></label>
+              <label for="agree" class="personal"><a class="js-modal personal-text" href="#">Нажимая на кнопку вы подтверждаете, что<br />ознакомлены с политикой конфиденциальности</a></label>
             </div> 
           </div>
         </form>
@@ -719,12 +718,12 @@
   <section class="instagram">
     <h2 class="instagram__title">Инстаграм</h2>
 
-    <div class="swiper-btnprev m-instagram">
+    <div class="swiper-btnprev-instagram">
       <svg class="swiper-btnprev--color">
         <use xlink:href="img/sprite.svg#btn-left"></use>
       </svg>
     </div>
-    <div class="swiper-btnnext m-instagram">
+    <div class="swiper-btnnext-instagram">
       <svg class="swiper-btnnext--color">
         <use xlink:href="img/sprite.svg#btn-right"></use>
       </svg>
@@ -754,32 +753,38 @@
     <div class="address__content">
       <h2 class="address__headline">Wood & Metal Lab</h2>
       <p class="address__sign">мастерская индивидуального производства мебели и предметов интерьера</p>
-      <div class="address__content-contacts">
-        <div>
-          <p class="address__content-contacts--bold">+7 (965) 029-60-02</p>
-          <p>woodmatallab@yandex.ru</p>
+
+      <div class="address__content-wrapper">
+        <div class="address__content-contacts">
+          <div class="address__content-connection">
+            <a href="tel: +7 965 029-60-02" class="icon address__content-contacts--tel">+7 965 029-60-02</a>
+            <p class="address__content-contacts--email m-margin"><a href="mailto:woodmatallab@yandex.ru" class="address__content-contacts--email">woodmatallab@yandex.ru</a></p>
+            
+          </div>
+          <div class="address__content-contacts-branch">
+            <p class="address__content-contacts--bold m-margin">Офис</p>
+  
+            <p>г. Санкт-Петербург,</p>
+            <p>метро Нарвская,</p>
+            <p>Балтийская улица, 51</p>
+          </div>
+         
         </div>
-        <div>
-          <p>пн-пт 10:00-19:00</p>
-          <p>сб 11:00-17:00</p>
+        <div class="address__content-address">
+          <div class="address__content-connection">
+            <p>пн-пт 10:00-19:00</p>
+            <p>сб 11:00-17:00</p>
+          </div>
+          <div class="address__content-contacts-branch">
+            <p class="address__content-contacts--bold m-margin">Производство</p>
+  
+            <p>г. Санкт-Петербург,</p>
+            <p>посёлок Стрельна,</p>
+            <p>ул. Фронтовая 3</p>
+          </div>
         </div>
       </div>
-      <div class="address__content-address">
-        <div>
-          <p class="address__content-contacts--bold m-margin">Офис</p>
-
-          <p>г. Санкт-Петербург,</p>
-          <p>метро Нарвская,</p>
-          <p>Балтийская улица, 51</p>
-        </div>
-        <div>
-          <p class="address__content-contacts--bold m-margin">Производство</p>
-
-          <p>г. Санкт-Петербург,</p>
-          <p>посёлок Стрельна,</p>
-          <p>ул. Фронтовая 3</p>
-        </div>
-      </div>
+    
       <h3>Осталисть вопросы?</h3>
       <div class="address__content-communic">
         <div class="feedback__formletter-personal--tel">
@@ -801,7 +806,7 @@
 
         <button class="feedback__formletter-consent--btn m-address">СВЯЗАТЬСЯ</button>
       </div>
-      <label for="agree" class="personal"><a class="js-modal personal-text" href="#" onclick="return false;">Нажимая на кнопку вы подтверждаете, что<br />ознакомлены с политикой конфиденциальности</a></label>
+      <label class="personal"><a class="js-modal personal-text" href="#">Нажимая на кнопку вы подтверждаете, что<br />ознакомлены с политикой конфиденциальности</a></label>
       <div class="address__content-icons">
         <a target="about:blank" href="" class="address__content-icons--instargam">
           <svg width="30" height="30">
@@ -823,7 +828,7 @@
 
   <script src="js/bundle.js?v=3"></script>
   <script src="js/script.js"></script>
-   <script>
+   <!-- <script>
     jQuery.validator.unobtrusive.adapters.add("brequired", function (options) {
       //b-required for checkboxes
       if (options.element.tagName.toUpperCase() == "INPUT" && options.element.type.toUpperCase() == "CHECKBOX") {
@@ -834,6 +839,6 @@
           }
       }
     });
-  </script> 
+  </script>  -->
 </body>
 </html>

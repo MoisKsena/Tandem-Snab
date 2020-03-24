@@ -41,10 +41,6 @@
   &--color:hover {
     fill: $green;
   }
-
-  .swiper-button-disabled {
-    fill: #6D6D6D;
-  }
 }
 
 .swiper-btnprev {
@@ -75,13 +71,15 @@
   &--color:hover {
     fill: #2FA06A;
   }
-
-  .swiper-button-disabled {
-    fill: #6D6D6D;
-  }
 }
 
+.swiper-btnnext.swiper-button-disabled {
+  opacity: .35;
+} 
 
+.swiper-btnprev.swiper-button-disable {
+  opacity: .35;
+}
 
 // .swiper-pagination-bullet-active {
 //   opacity: 1;

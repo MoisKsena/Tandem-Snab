@@ -21,12 +21,18 @@
   
 }
 
-.swiper-btnprev.m-instagram {
+.swiper-btnprev-instagram {
+  position: absolute;
   top: 12px;
   left: 83%;
+  outline: none;
+  cursor: pointer;
 }
 
-.swiper-btnnext.m-instagram {
+.swiper-btnnext-instagram {
+  position: absolute;
   top: 12px;
   left: 88%;
+  outline: none;
+  cursor: pointer;
 }

@@ -32,19 +32,43 @@
     margin: 0;
   }
 
+  &__content-wrapper {
+    display: flex;
+    margin-top: 56px;
+    padding: 0;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
   &__content-contacts,
   &__content-address {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     text-align: left;
+    padding: 0;
+    margin: 0;
   }
 
   &__content-contacts {
-    padding: 0;
-    margin-top: 56px;
-    margin-bottom: 32px;
+    width: 237px;
+  }
+
+  &__content-address {
+    width: 180px;
+  }  
+
+  &__content-contacts {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  &__content-connection {
+    height: 45px;
+  }
+
+  &__content-contacts-branch {
+    margin-top: 32px;
   }
 
   &__content-contacts  div > p,
@@ -55,21 +79,35 @@
     line-height: 22px;
   }
 
-  &__content-contacts--bold {
+  &__content-contacts--tel {
     font-weight: 600;
+  }
+
+  &__content-contacts--bold {
+    font-weight: 500;
+  }
+
+  &__content-contacts--email.m-margin {
+    margin-top: 8px;
+  }
+
+  &__content-contacts--email,
+  &__content-contacts--tel {
+    color: $black;
+    cursor: pointer;
+  }
+
+  &__content-contacts--tel:hover,
+  &__content-contacts--email:hover {
+    color: $green;
   }
 
   &__content-contacts--bold.m-margin {
     margin-bottom: 16px;
   }
 
-  &__content-address {
-    padding: 0;
-    margin-bottom: 56px;
-  }
-
   h3 {
-    padding: 0;
+    padding-top: 56px;
     margin: 0;
   }
 
@@ -84,7 +122,7 @@
     align-items: flex-end;
     display: flex;
     justify-content: flex-end;
-    margin-top: 10px;
+    margin-top: 8px;
     padding: 0;
     width: 100%;
 
@@ -107,8 +145,13 @@
     fill: #2FA06A;
   } 
 
-  .feedback__formletter-personal--telfield.m-address,
+  .feedback__formletter-personal--telfield.m-address {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .personal-social.m-address {
+    font-size: 14px;
     line-height: 24px;
   }
 
