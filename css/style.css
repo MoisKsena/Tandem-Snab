@@ -1029,10 +1029,12 @@ svg path {
     fill: #2FA06A; }
 
 .swiper-btnnext.swiper-button-disabled {
-  opacity: .35; }
+  opacity: .35;
+  cursor: default; }
 
 .swiper-btnprev.swiper-button-disabled {
-  opacity: .35; }
+  opacity: .35;
+  cursor: default; }
 
 .ideas {
   display: -webkit-box;
