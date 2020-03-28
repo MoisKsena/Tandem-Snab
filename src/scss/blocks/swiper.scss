@@ -7,6 +7,10 @@
   margin: auto;
 }
 
+// .swiper-slide.swiper-slide-active {
+//   width: 100%;
+// }
+
 .swiper {
   &__demo-foto {
     width: 100%;
@@ -14,9 +18,6 @@
 }
 
 .swiper-btnnext {
-  position: absolute;
-  left: 50px;
-  bottom: -50px;
   cursor: pointer;
   margin: 0;
   padding: 0;
@@ -24,18 +25,10 @@
   outline: none;
   height: fit-content;
 
-  @media (min-width: 768px) {
-    
-  }
-
   &--color {
     width: 40px;
     height: 20px;
     fill: $black;
-
-    @media (min-width: 768px) {
-      
-    }
   }
 
   &--color:hover {
@@ -44,9 +37,6 @@
 }
 
 .swiper-btnprev {
-  position: absolute;
-  left: 0;
-  bottom: -50px;
   cursor: pointer;
   margin: 0;
   padding: 0;
@@ -54,18 +44,10 @@
   height: fit-content;
   z-index: 1;
 
-  @media (min-width: 768px) {
-   
-  }
-
   &--color {
     width: 40px;
     height: 20px;
     fill: $black;
-
-    @media (min-width: 768px) {
-      
-    }
   }
 
   &--color:hover {
@@ -75,10 +57,12 @@
 
 .swiper-btnnext.swiper-button-disabled {
   opacity: .35;
+  cursor: default;
 } 
 
 .swiper-btnprev.swiper-button-disabled {
   opacity: .35;
+  cursor: default;
 }
 
 // .swiper-pagination-bullet-active {

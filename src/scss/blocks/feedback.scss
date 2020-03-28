@@ -15,10 +15,11 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin-right: 136px;
+    //margin-right: 136px;
     padding: 67px 90px 68px 130px;
     //height: 630px;
     position: relative;
+    width: 90%;
 
     @media (max-width: 1280px) {
       padding: 30px;
@@ -26,6 +27,7 @@
 
     @media (max-width: 980px) {
       margin-right: 0;
+      width: 100%;
     }
   }
 
@@ -34,12 +36,16 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
-    width: 359px;
+    width: 40%;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__form-img img {
-    width: 359px;
-    height: 409px;
+    width: 100%;
+    height: auto;
     padding: 0;
     margin: 0;
   }
@@ -104,9 +110,15 @@
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    width: 60%;
 
     @media (max-width: 1280px) {
       margin-right: 30px;
+    }
+
+    @media (max-width: 768px) {
+      margin: 0;
+      width: 100%;
     }
   }
 
@@ -142,6 +154,10 @@
     font-size: 16px;
     line-height: 24px;
     color: $black;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
   }
 
   &__formletter-personal {
@@ -150,7 +166,9 @@
     display: flex;
     justify-content: space-between;
 
-    @media (min-width: 800px) {
+    @media (max-width: 768px) {
+      margin-top: 10px;
+      flex-direction: column;
     }
 
     &--name,
@@ -159,6 +177,10 @@
       margin: 0;
       padding: 0;
       width: 160px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
 
     &--namefield,
@@ -179,6 +201,10 @@
     &--name,
     &--tel {
       margin-right: 40px;
+
+      @media (max-width: 768px) {
+        margin-right: 0;
+      }
     }
   }
 
@@ -187,7 +213,7 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 800px) {
+    @media (max-width: 768px) {
     }
     
     &--btn {

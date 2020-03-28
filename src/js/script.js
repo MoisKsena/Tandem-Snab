@@ -107,6 +107,14 @@ function initSwipers(){
     },
   });
 
+  swipers.main = new Swiper('.j-swiper-mobile', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    loop: true,
+    autoplay: true,
+  });
+
   swipers.main = new Swiper('.j-swiper-insta', {
     slidesPerView: 4,
     spaceBetween: 23,

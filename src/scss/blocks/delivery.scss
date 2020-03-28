@@ -4,20 +4,23 @@
 
   &__headline {
     margin: 0;
-    padding-left: 140px;
+    padding-left: 136px;
   }
 
   &__box {
-    padding: 56px 154px 0 110px;
+    padding: 56px 136px 0;
     margin: 0;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 980px) {
+      padding: 56px 60px 0;
+    }
   }
 
   &__block {
     display: flex;
     flex-direction: column;
-    text-align: center;
     width: 248px;
   }
 

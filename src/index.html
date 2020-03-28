@@ -374,8 +374,8 @@
 
   <section class="about" id="about">
     
-    <article>
-      <div class="about__gallery">
+    <article class="about__gallery">
+      <div class="about__gallery-wrapper">
         <div class="about__gallery-preview">
 
           <div class="swiper-container j-swiper-preview">
@@ -390,29 +390,44 @@
           </div>
         </div>
 
-        <div class="about__gallery-descriptions">
-          <div class="about__gallery-descriptions-wrapper">
-            <div class="swiper-btnprev swiper-button-disabled">
-              <svg class="swiper-btnprev--color">
-                <use xlink:href="img/sprite.svg#btn-left"></use>
-              </svg>
-            </div>
-            <div class="swiper-btnnext">
-              <svg class="swiper-btnnext--color">
-                <use xlink:href="img/sprite.svg#btn-right"></use>
-              </svg>
-            </div>
-            
-            <article class="about__gallery-demo">
-              <div class="about__gallery-demo-descr">
-                <h2 class="about__gallery-demo-descr-title">Wood & Metal Lab —<br/>место где оживают идеи</h2>
-                <div class="about__gallery-demo-text-wrapper">
-                  <p class="about__gallery-demo-text">Мастерская по производству эксклюзивных вещей в Санкт-Петербурге. Изготавливаем мебель и предметы интерьера в стиле Loft под ключ.</p>
-                  <p class="about__gallery-demo-text">Разрабатываем и воплощаем в жизнь предметы интерьера для частных лиц, дизайнеров и коммерческих организаций.</p>
+        <div class="about__gallery-descriptions-wrapper">
+          <div class="about__gallery-descriptions">
+              <article class="about__gallery-demo">
+                <div class="about__gallery-demo-descr">
+                  <h2 class="about__gallery-demo-descr-title">Wood & Metal Lab —<br/>место где оживают идеи</h2>
+
+                  <div class="about__gallery-demo-slider">
+                    <div class="swiper-container j-swiper-mobile">
+                      <div class="swiper-wrapper">
+                        <!-- слайды/фото для предпроссмотра -->
+                        <div class="swiper-slide"><img class="swiper__demo-foto" src="img/materials-gall-1.jpg" alt="#"></div>
+                        <div class="swiper-slide"><img class="swiper__demo-foto" src="img/materials-gall-2.jpg" alt="#"></div>
+                        <div class="swiper-slide"><img class="swiper__demo-foto" src="img/materials-gall-3.jpg" alt="#"></div>
+                        <!-- <div class="swiper-slide"><img class="projects__demo-foto" src="img/img1.jpg" alt="#" data-imageid='4'></div> -->
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="about__gallery-demo-text-wrapper">
+                    <p class="about__gallery-demo-text">Мастерская по производству эксклюзивных вещей в Санкт-Петербурге. Изготавливаем мебель и предметы интерьера в стиле Loft под ключ.</p>
+                    <p class="about__gallery-demo-text">Разрабатываем и воплощаем в жизнь предметы интерьера для частных лиц, дизайнеров и коммерческих организаций.</p>
+                  </div>
+                </div>
+              </article>
+
+              <div class="about__gallery-descriptions-btn"> 
+                <div class="swiper-btnprev swiper-button-disabled">
+                  <svg class="swiper-btnprev--color">
+                    <use xlink:href="img/sprite.svg#btn-left"></use>
+                  </svg>
+                </div>
+                <div class="swiper-btnnext">
+                  <svg class="swiper-btnnext--color">
+                    <use xlink:href="img/sprite.svg#btn-right"></use>
+                  </svg>
                 </div>
               </div>
-            </article>
-          </div>
+            </div>
         </div>
       </div>
     </article>
@@ -744,10 +759,6 @@
   </section>
 
   <section class="address" id="address">
-    <div class="address__map">
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5d2b062fc1d4d35ac16653b80c5a9412386833c7e5392427aef9033547cc7f90&amp;source=constructor" frameborder="0"></iframe>    
-    </div>
-
     <div class="address__content">
       <h2 class="address__headline">Wood & Metal Lab</h2>
       <p class="address__sign">мастерская индивидуального производства<br />мебели и предметов интерьера</p>
@@ -783,9 +794,9 @@
         </div>
       </div>
     
-      <h3>Осталисть вопросы?</h3>
+      <h3>Остались вопросы?</h3>
       <div class="address__content-communic">
-        <div class="feedback__formletter-personal--tel">
+        <div class="feedback__formletter-personal--tel m-address">
           <!-- <label for="tel">Телефон</label> -->
           <input type="text" id="tel" name="tel" 
             data-inputmask="'mask': '+7 (999) 999-99-99'" inputmode="numeric"
@@ -819,6 +830,10 @@
         </a>
       </div>
     </div>
+
+    <div class="address__map">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5d2b062fc1d4d35ac16653b80c5a9412386833c7e5392427aef9033547cc7f90&amp;source=constructor" frameborder="0"></iframe>    
+    </div>
   </section>
 
 
@@ -826,17 +841,5 @@
 
   <script src="js/bundle.js?v=3"></script>
   <script src="js/script.js"></script>
-   <!-- <script>
-    jQuery.validator.unobtrusive.adapters.add("brequired", function (options) {
-      //b-required for checkboxes
-      if (options.element.tagName.toUpperCase() == "INPUT" && options.element.type.toUpperCase() == "CHECKBOX") {
-          //setValidationValues(options, "required", true);
-          options.rules["required"] = true;
-          if (options.message) {
-              options.messages["required"] = options.message;
-          }
-      }
-    });
-  </script>  -->
 </body>
 </html>

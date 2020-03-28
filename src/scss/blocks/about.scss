@@ -3,38 +3,86 @@
   padding: 0;
 
   &__gallery {
-    align-items: flex-end;
-    justify-content: flex-end;
     display: flex;
-    height: 576px;
+  }
+
+  &__gallery-wrapper {
+    align-items: flex-end;
+    display: flex;
+    //height: 576px;
+    height: auto;
     position: relative;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &__gallery-preview {
     bottom: 0;
     height: 489px;
     position: absolute;
-    left: 24px;
+    right: 24px;
     width: 648px;
+
+    @media (max-width: 1024px) {
+      width: 60%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
-  &__gallery-descriptions {
+  &__gallery-descriptions-wrapper {
     align-items: center;
     background-color: $white;
     display: flex;
     justify-content: center;
-    padding: 64px 158px 166px 312px;
     margin: 0;
-    height: 576px;
-    width: 895px;
+    padding: 64px 335px 42px 136px;
+    height: auto;
+    width: 66%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 24px;
+    }
   }
 
-  &__gallery-descriptions-wrapper {
-    position: relative;
+  &__gallery-descriptions {
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 768px) {
+      display: block;
+      width: 100%;
+    }
   }
+
+  &__gallery-demo-slider {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+
   &__gallery-demo-descr {
     padding: 0;
     margin: 0;
+  }
+
+  &__gallery-descriptions-btn {
+    display: flex;
+    margin-top: 102px;
+    padding: 0;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__gallery-demo-descr-title {
@@ -47,12 +95,17 @@
   }
 
   &__gallery-demo-text-wrapper {
-    height: 192px;
+    height: 190px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0;
     margin-top: 24px;
+
+    @media (max-width: 768px) {
+      margin-top: 0;
+      height: auto;
+    }
   }
 
   &__gallery-demo-text {
@@ -61,6 +114,10 @@
     line-height: 24px;
     margin: 0;
     padding: 0;
+
+    @media (max-width: 768px) {
+      padding-top: 24px;
+    }
   }
 
   &__process {
@@ -68,6 +125,14 @@
     justify-content: space-between;
     padding: 0;
     margin: 96px 136px 0;
+
+    @media (max-width: 980px) {
+      margin: 96px 60px 0;
+    }
+
+    @media (max-width: 768px) {
+      margin: 0;
+    }
   }
 
   &__process-block {
@@ -82,7 +147,6 @@
   }
 
   &__process-block-title {
-    text-align: center;
     margin: 0;
     padding: 39px 0 24px;
   }
@@ -91,7 +155,6 @@
     font-family: $font-family;
     font-size: 18px;
     line-height: 22px;
-    text-align: center;
     margin: 0;
     padding: 0;
   }
