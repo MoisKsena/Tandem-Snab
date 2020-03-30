@@ -65,6 +65,18 @@
   cursor: default;
 }
 
+.swiper__ideas-wrapper {
+  display: flex;
+  width: 312px;
+  margin: auto;
+  padding-bottom: 32px;
+}
+
+.swiper__ideas-foto {
+  height: 312px;
+  width: 100%;
+}
+
 // .swiper-pagination-bullet-active {
 //   opacity: 1;
 //   background: #2FA06A;

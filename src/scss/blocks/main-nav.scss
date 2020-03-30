@@ -11,22 +11,23 @@
     @media (max-width: 768px) {
       display: flex;
       position: absolute;
-      width: 20px;
-      top: 12px;
-      right: 15px;
+      width: 24px;
+      top: 22px;
+      right: 20px;
       flex-wrap: wrap;
       background-color: transparent;
       border: none;
       cursor: pointer;
       outline: none;
+      z-index: 5;
     }
 
     span.line {
       display: inline-block;
-      margin-bottom: 4px;
+      margin-bottom: 8px;
       background-color: black;
       width: 100%;
-      height: 3px;
+      height: 2px;
     }
   }
 
@@ -39,7 +40,7 @@
     width: 100%;
     height: 100vh;
     position: absolute;
-    top: 60px;
+    top: 0;
     right: 0;
     margin: 0;
     padding: 0;
@@ -52,10 +53,32 @@
     }
   }
 
+  &__headline {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    margin: 0;
+  }
+
+  &__burger-address {
+    padding: 43px 0 0 22px;
+    margin: 0;
+  }
+
+  &__burger-address-city {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+  }
+
   &__burger-list {
     display: flex; 
     margin: 0;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 34px;
+    padding-left: 22px;
     flex-direction: column;
   }
 
@@ -63,9 +86,9 @@
     margin: 0;
     padding-bottom: 22px;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 146.28%;
-    letter-spacing: 0.27em;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
   }
 
@@ -114,36 +137,6 @@
       margin: 0;
       padding-bottom: 40px;
       color: #000;
-      line-height: 160%;
-    }
-  }
-
-  &__burger-address {
-    margin: 0;
-    padding-left: 43px;
-    padding-top: 56px;
-
-    &--headline {
-      margin: 0;
-      padding-bottom: 30px;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 23px;
-      color: $red;
-    }
-
-    &--headline p {
-      margin: 0;
-      padding: 0;
-      line-height: 150%;
-    }
-
-    &--text {
-      margin: 0;
-      padding: 0;
-      color: #000;
-      font-size: 15px;
       line-height: 160%;
     }
   }
@@ -210,13 +203,8 @@
     display: flex;
     height: fit-content;
 
-    @media (max-width: 769px) { 
-      margin-right: 30px;
-      align-items: center;
-    }
-
-    @media (max-width: 320px) { 
-      
+    @media (max-width: 760px) { 
+      display: none;
     }
 
     &--whatsapp{
@@ -245,8 +233,16 @@
     color: $green;
   } 
 
-  @media (max-width: 769px) { 
-    font-size: 12px;
+  &.m-burger-address {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+    padding-bottom: 7px;
+  }
+
+  @media (max-width: 768px) { 
+    
   }
 }
 
@@ -255,8 +251,8 @@
   content: ' ';
   right: 8px;
   top: 0;
-  height: 24px;
-  width: 3px;
+  height: 26px;
+  width: 2px;
   background-color: black;
   cursor: pointer;
   outline: none;

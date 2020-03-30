@@ -115,6 +115,21 @@ function initSwipers(){
     autoplay: true,
   });
 
+  swipers.main = new Swiper('.j-swiper-mobile-ideas', {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    slidesPerGroup: 1,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+
   swipers.main = new Swiper('.j-swiper-insta', {
     slidesPerView: 4,
     spaceBetween: 23,

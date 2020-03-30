@@ -168,6 +168,12 @@
       padding: 0;
       margin: 0;
     }
+
+    &.m-burger {
+      justify-content: flex-start;
+      padding-left: 22px;
+      margin: 0;
+    }
   }
 
   &__content-icons svg {

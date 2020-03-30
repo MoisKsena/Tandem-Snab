@@ -30,6 +30,14 @@
             <span class="close"></span>
           </div>
           <div class="main-nav__burger-menu" style="display: none;">
+            <div class="main-nav__headline">
+              <a class="header__headline--name m-logo" href="#">WM</a>   
+              <p class="header__headline--name m-sign">Wood&nbsp;&&nbsp;Metal&nbsp;Lab</p>
+            </div>
+            <div class="main-nav__burger-address">
+              <a href="tel: +7 965 029-60-02" class="icon m-burger-address">+7 965 029-60-02</a>
+              <p class="header__burger-address-city">Санкт-Петербург</p>
+            </div> 
             <ul class="main-nav__burger-list">
               <li class="main-nav__burger-item">
                 <a href="#ideas" class="main-nav__burger-link">ИДЕИ</a>
@@ -37,24 +45,28 @@
               <li class="main-nav__burger-item">
                 <a href="#materials" class="main-nav__burger-link">МАТЕРИАЛЫ</a>
               </li>
+              <li class="main-nav__burger-item">
+                <a href="#about" class="main-nav__burger-link">O&nbsp;НАС</a>
+              </li>
+              <li class="main-nav__burger-item">
+                <a href="#delivery" class="main-nav__burger-link">ДОСТАВКА</a>
+              </li>
+              <li class="main-nav__burger-item">
+                <a href="#address" class="main-nav__burger-link">АДРЕС</a>
+              </li>
             </ul>
-            <div class="main-nav__burger-connection">
-              <div class="main-nav__burger-connection--sign">
-                <p></p>
-                <p></p>
-              </div>
-              <p  class="main-nav__burger-connection--name"></p>
-              <p  class="main-nav__burger-connection--contacts"></p>
-              
-            </div>
-            <div class="main-nav__burger-address">
-              <div class="main-nav__burger-address--headline">
-                <p></p>
-                <p></p>
-              </div>
-              <p class="main-nav__burger-address--text"></p>
-              <p class="main-nav__burger-address--text"></p>
-              <p class="main-nav__burger-address--text"></p>
+            <div class="address__content-icons m-burger">
+              <a target="about:blank" href="https://www.instagram.com/woodmetallab/" class="address__content-icons--instargam">
+                <svg width="30" height="30">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+      
+              <a target="about:blank" href="https://wa.me/79650296002" class="address__content-icons--whatsapp">
+                <svg width="30" height="27">
+                  <use xlink:href="img/sprite.svg#whatsApp2"></use>
+                </svg>
+              </a>
             </div>
           </div>
           <ul class="main-nav__list" id="headerMenu">
@@ -164,23 +176,46 @@
             </ul>
           </nav>
           <!-- экраны меню -->
-          <!-- экран-СТОЛЫ И СТУЛЬЯ -->
-          <div class="ideas__content-idea m-active" id="tables">
-            
-            <div class="ideas__content-idea-block-left">
-              <div id="al-c" class="ideas__content-block-left-top">
-                <div class="ideas__container">
-                  <div class="ideas__container-effects">
-                    <div class="ideas__container-effects-block">
-                      <img src="img/tables-3.jpg" alt="tables" class="ideas__container-effects-block-img m-top">
-                      <div class="ideas__container-effects-hoverblock">
-                        <div id="al-c" class="ideas__content-block-left-top">
-                          <div class="ideas__container m-hover-text">
-                            <ul class="ideas__content-list">
-                              <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
-                              <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
-                            </ul>
-                            <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
+          <div class="ideas__content-idea-wrapper">
+            <!-- экран-СТОЛЫ И СТУЛЬЯ -->
+            <div class="ideas__content-idea m-active" id="tables">
+              
+              <div class="ideas__content-idea-block-left">
+                <div id="al-c" class="ideas__content-block-left-top">
+                  <div class="ideas__container">
+                    <div class="ideas__container-effects">
+                      <div class="ideas__container-effects-block">
+                        <img src="img/tables-3.jpg" alt="tables" class="ideas__container-effects-block-img m-top">
+                        <div class="ideas__container-effects-hoverblock">
+                          <div id="al-c" class="ideas__content-block-left-top">
+                            <div class="ideas__container m-hover-text">
+                              <ul class="ideas__content-list">
+                                <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
+                              </ul>
+                              <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="al-c" class="ideas__content-block-left-bottom">
+                  <div class="ideas__container">
+                    <div class="ideas__container-effects">
+                      <div class="ideas__container-effects-block">
+                        <img src="img/tables-1.jpg" alt="tables" class="ideas__container-effects-block-img m-bottom">
+                        <div class="ideas__container-effects-hoverblock">
+                          <div id="al-c" class="ideas__content-block-left-bottom">
+                            <div class="ideas__container m-hover-text">
+                              <ul class="ideas__content-list">
+                                <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
+                              </ul>
+                              <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -189,19 +224,87 @@
                 </div>
               </div>
 
-              <div id="al-c" class="ideas__content-block-left-bottom">
-                <div class="ideas__container">
-                  <div class="ideas__container-effects">
-                    <div class="ideas__container-effects-block">
-                      <img src="img/tables-1.jpg" alt="tables" class="ideas__container-effects-block-img m-bottom">
-                      <div class="ideas__container-effects-hoverblock">
-                        <div id="al-c" class="ideas__content-block-left-bottom">
-                          <div class="ideas__container m-hover-text">
-                            <ul class="ideas__content-list">
-                              <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
-                              <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
-                            </ul>
-                            <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
+              <div class="ideas__content-idea-block-center"> 
+                <div id="al-c" class="ideas__content-block-center-top">
+                  <div class="ideas__container">
+                    <div class="ideas__container-effects">
+                      <div class="ideas__container-effects-block">
+                        <img src="img/tables-6.jpg" alt="tables" class="ideas__container-effects-block-img m-center-top">
+                        <div class="ideas__container-effects-hoverblock">
+                          <div id="al-c" class="ideas__content-block-center-top">
+                            <div class="ideas__container m-hover-text">
+                              <ul class="ideas__content-list">
+                                <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
+                              </ul>
+                              <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="al-c" class="ideas__content-block-center-bottom">
+                  <div class="ideas__container">
+                    <div class="ideas__container-effects">
+                      <div class="ideas__container-effects-block">
+                        <img src="img/tables-5.jpg" alt="tables" class="ideas__container-effects-block-img m-center-bottom">
+                        <div class="ideas__container-effects-hoverblock">
+                          <div id="al-c"  class="ideas__content-block-center-bottom">
+                            <div class="ideas__container m-hover-text">
+                              <ul class="ideas__content-list">
+                                <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
+                              </ul>
+                              <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
+                            </div>
+                          </div>
+                        </div>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ideas__content-idea-block-right">
+                <div id="al-c" class="ideas__content-block-right-top">
+                  <div class="ideas__container">
+                    <div class="ideas__container-effects">
+                      <div class="ideas__container-effects-block">
+                        <img src="img/tables-2.jpg" alt="tables" class="ideas__container-effects-block-img m-top">
+                        <div class="ideas__container-effects-hoverblock">
+                          <div id="al-c" class="ideas__content-block-right-top">
+                            <div class="ideas__container m-hover-text">
+                              <ul class="ideas__content-list">
+                                <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
+                              </ul>
+                              <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="al-c" class="ideas__content-block-right-bottom">
+                  <div class="ideas__container">
+                    <div class="ideas__container-effects">
+                      <div class="ideas__container-effects-block">
+                        <img src="img/tables-4.jpg" alt="tables" class="ideas__container-effects-block-img m-bottom">
+                        <div class="ideas__container-effects-hoverblock">
+                          <div id="al-c" class="ideas__content-block-right-bottom">
+                            <div class="ideas__container m-hover-text">
+                              <ul class="ideas__content-list">
+                                <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
+                              </ul>
+                              <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -209,128 +312,135 @@
                   </div>
                 </div>
               </div>
+
             </div>
-
-            <div class="ideas__content-idea-block-center"> 
-              <div id="al-c" class="ideas__content-block-center-top">
-                <div class="ideas__container">
-                  <div class="ideas__container-effects">
-                    <div class="ideas__container-effects-block">
-                      <img src="img/tables-5.jpg" alt="tables" class="ideas__container-effects-block-img m-center-top">
-                      <div class="ideas__container-effects-hoverblock">
-                        <div id="al-c" class="ideas__content-block-center-top">
-                          <div class="ideas__container m-hover-text">
-                            <ul class="ideas__content-list">
-                              <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
-                              <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
-                            </ul>
-                            <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div id="al-c" class="ideas__content-block-center-bottom">
-                <div class="ideas__container">
-                  <div class="ideas__container-effects">
-                    <div class="ideas__container-effects-block">
-                      <img src="img/tables-5.jpg" alt="tables" class="ideas__container-effects-block-img m-center-bottom">
-                      <div class="ideas__container-effects-hoverblock">
-                        <div id="al-c"  class="ideas__content-block-center-bottom">
-                          <div class="ideas__container m-hover-text">
-                            <ul class="ideas__content-list">
-                              <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
-                              <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
-                            </ul>
-                            <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
-                          </div>
-                        </div>
-                      </div>
-                      </li>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <!-- экран-КОНСОЛИ И СТЕЛАЖИ -->
+            <div class="ideas__content-idea" id="console">
+          
             </div>
-
-            <div class="ideas__content-idea-block-right">
-              <div id="al-c" class="ideas__content-block-right-top">
-                <div class="ideas__container">
-                  <div class="ideas__container-effects">
-                    <div class="ideas__container-effects-block">
-                      <img src="img/tables-2.jpg" alt="tables" class="ideas__container-effects-block-img m-top">
-                      <div class="ideas__container-effects-hoverblock">
-                        <div id="al-c" class="ideas__content-block-right-top">
-                          <div class="ideas__container m-hover-text">
-                            <ul class="ideas__content-list">
-                              <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
-                              <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
-                            </ul>
-                            <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div id="al-c" class="ideas__content-block-right-bottom">
-                <div class="ideas__container">
-                  <div class="ideas__container-effects">
-                    <div class="ideas__container-effects-block">
-                      <img src="img/tables-4.jpg" alt="tables" class="ideas__container-effects-block-img m-bottom">
-                      <div class="ideas__container-effects-hoverblock">
-                        <div id="al-c" class="ideas__content-block-right-bottom">
-                          <div class="ideas__container m-hover-text">
-                            <ul class="ideas__content-list">
-                              <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
-                              <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
-                            </ul>
-                            <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <!-- экран-ОБУВНИЦЫ -->
+            <div class="ideas__content-idea" id="shoes">
+    
             </div>
+            <!-- экран-ШИРМЫ -->
+            <div class="ideas__content-idea" id="screens">
+      
+            </div>
+            <!-- экран-КРОВАТИ -->
+            <div class="ideas__content-idea" id="beds">
 
-          </div>
-          <!-- экран-КОНСОЛИ И СТЕЛАЖИ -->
-          <div class="ideas__content-idea" id="console">
-         
-          </div>
-          <!-- экран-ОБУВНИЦЫ -->
-          <div class="ideas__content-idea" id="shoes">
+            </div>
+            <!-- экран-ЛЕСТНИЦЫ -->
+            <div class="ideas__content-idea" id="stairs">
+    
+            </div>
+            <!-- экран-ДРУГОЕ -->
+            <div class="ideas__content-idea" id="other">
   
+            </div>
+            <!-- конец экранов -->
           </div>
-          <!-- экран-ШИРМЫ -->
-          <div class="ideas__content-idea" id="screens">
-     
-          </div>
-          <!-- экран-КРОВАТИ -->
-          <div class="ideas__content-idea" id="beds">
-
-          </div>
-          <!-- экран-ЛЕСТНИЦЫ -->
-          <div class="ideas__content-idea" id="stairs">
-  
-          </div>
-          <!-- экран-ДРУГОЕ -->
-          <div class="ideas__content-idea" id="other">
- 
-          </div>
-          <!-- конец экранов -->
         </article>
 
-      <article class="ideas__content-layout-mobile">
+        <article class="ideas__content-layout-mobile">
+          <div class="ideas__content-layout-bcg"></div>
 
-      </article>
+          <div class="ideas__accordion"> 
+            <div class="ideas__accordion-tab"> <!-- .tab -->
+             <input type="checkbox" id="tab1" name="tab-group">
+             <label for="tab1" class="ideas__accordion-tab-title">СТОЛЫ И СТУЛЬЯ</label> 
+             <section class="ideas__accordion-tab-content"> 
+              <div class="swiper__ideas-wrapper">
+                <div class="swiper-container j-swiper-mobile-ideas">
+                  <div class="swiper-wrapper">
+                    <!-- слайды/фото для предпроссмотра -->
+                    <div class="swiper-slide">
+                      <img class="swiper__ideas-foto" src="img/tables-1.jpg" alt="#">
+                      <div class="">Стол и стул из ДСП по эскизу клиента в частный дом</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="swiper__ideas-foto" src="img/tables-2.jpg" alt="#">
+                      <div class="">Барные стулья и стол. Столешница и сидушки из сосны</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="swiper__ideas-foto" src="img/tables-3.jpg" alt="#">
+                      <div class="">Стол и диван на металлических каркасах. Столешница
+                        и подлокотники из масива ореха. Диванные подушки из канваса</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="swiper__ideas-foto" src="img/tables-4.jpg" alt="#">
+                      <div class="">Стол из массива ореха на металлическом подстолье для ресторана “Дубки”</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="swiper__ideas-foto" src="img/tables-5.jpg" alt="#">
+                      <div class="">Каменная столешница. Подстолье и стулья</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="swiper__ideas-foto" src="img/tables-6.jpg" alt="#">
+                      <div class="">Стол из массива карагача на металлическом подстолье и металлический стул по заказу дизайн студии “Цветочки”</div>
+                    </div>
+                    <!--  -->
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+
+              <a href="#feedback"><button class="btn ideas__content-idea-block-btn m-mobile">ЗАКАЗАТЬ</button></a>
+
+             </section> 
+            </div> 
+            <div class="ideas__accordion-tab">
+             <input type="checkbox" id="tab2" name="tab-group">
+             <label for="tab2" class="ideas__accordion-tab-title">КОНСОЛИ И СТЕЛАЖИ</label> 
+             <article class="ideas__accordion-tab-content"> tab-content
+              Нет, на HTML5 по прежнему нельзя программировать, основным языком является JavaScript. 
+              Так что в разговоре лучше не упоминать, что умеешь программировать на HTML5, засмеют.
+             </article> 
+            </div> 
+            <div class="ideas__accordion-tab">
+              <input type="checkbox" id="tab2" name="tab-group">
+              <label for="tab2" class="ideas__accordion-tab-title">ОБУВНИЦЫ</label> 
+              <article class="ideas__accordion-tab-content"> tab-content
+                Нет, на HTML5 по прежнему нельзя программировать, основным языком является JavaScript. 
+                Так что в разговоре лучше не упоминать, что умеешь программировать на HTML5, засмеют.
+              </article> 
+            </div>
+            <div class="ideas__accordion-tab">
+              <input type="checkbox" id="tab2" name="tab-group">
+              <label for="tab2" class="ideas__accordion-tab-title">ШИРМЫ</label> 
+              <article class="ideas__accordion-tab-content"> tab-content
+                Нет, на HTML5 по прежнему нельзя программировать, основным языком является JavaScript. 
+                Так что в разговоре лучше не упоминать, что умеешь программировать на HTML5, засмеют.
+              </article> 
+            </div> 
+            <div class="ideas__accordion-tab">
+              <input type="checkbox" id="tab2" name="tab-group">
+              <label for="tab2" class="ideas__accordion-tab-title">КРОВАТИ</label> 
+              <article class="ideas__accordion-tab-content"> tab-content
+                Нет, на HTML5 по прежнему нельзя программировать, основным языком является JavaScript. 
+                Так что в разговоре лучше не упоминать, что умеешь программировать на HTML5, засмеют.
+              </article> 
+            </div> 
+            <div class="ideas__accordion-tab">
+              <input type="checkbox" id="tab2" name="tab-group">
+              <label for="tab2" class="ideas__accordion-tab-title">ЛЕСТНИЦЫ</label> 
+              <article class="ideas__accordion-tab-content"> tab-content
+                Нет, на HTML5 по прежнему нельзя программировать, основным языком является JavaScript. 
+                Так что в разговоре лучше не упоминать, что умеешь программировать на HTML5, засмеют.
+              </article> 
+            </div> 
+            <div class="ideas__accordion-tab">
+              <input type="checkbox" id="tab2" name="tab-group">
+              <label for="tab2" class="ideas__accordion-tab-title">ДРУГОЕ</label> 
+              <article class="ideas__accordion-tab-content"> tab-content
+                Нет, на HTML5 по прежнему нельзя программировать, основным языком является JavaScript. 
+                Так что в разговоре лучше не упоминать, что умеешь программировать на HTML5, засмеют.
+              </article> 
+            </div> 
+          </div>
+
+        </article>
     </div>
   </section>
 
