@@ -1060,6 +1060,8 @@ svg path {
   display: -ms-flexbox;
   display: flex;
   margin: auto; }
+  .swiper-wrapper.m-ideas-swiper-wrapper {
+    margin-bottom: 16px; }
 
 .swiper-slide {
   margin: auto; }
@@ -1111,7 +1113,7 @@ svg path {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 312px;
+  width: 100%;
   margin: auto;
   padding-bottom: 32px; }
 
@@ -1269,6 +1271,12 @@ svg path {
     display: flex;
     margin: 56px 112px 0;
     padding: 0; }
+    @media (max-width: 980px) {
+      .ideas__menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 56px 56px 0; } }
     @media (max-width: 768px) {
       .ideas__menu {
         display: none; } }
@@ -1434,7 +1442,7 @@ svg path {
     font-size: 14px;
     letter-spacing: 0.08em; }
     .ideas__content-idea-block-btn.m-mobile {
-      width: 312px; }
+      width: 100%; }
   .ideas__content-layout-mobile {
     display: none; }
     @media (max-width: 768px) {
@@ -1484,7 +1492,8 @@ svg path {
     /* Вид курсора */ }
   .ideas__accordion-tab-content {
     padding: 10px 20px;
-    /* Поля вокруг текста */ }
+    /* Поля вокруг текста */
+    width: 100%; }
   .ideas__accordion-tab :checked + .ideas__accordion-tab-title {
     border-radius: 3px 3px 0 0;
     /* Скругляем уголки */
