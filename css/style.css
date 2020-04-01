@@ -425,6 +425,40 @@ svg path {
   background-color: #2FA06A;
   color: #232323; }
 
+#buttonUp {
+  display: inline-block;
+  background-color: #232323;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 26px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000; }
+
+#buttonUp::after {
+  content: "\003C";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff; }
+
+#buttonUp:active {
+  background-color: #2FA06A; }
+
+#buttonUp.show {
+  opacity: 1;
+  visibility: visible; }
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
