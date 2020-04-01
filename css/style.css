@@ -895,7 +895,10 @@ svg path {
     display: -ms-flexbox;
     display: flex;
     margin-top: 102px;
-    padding: 0; }
+    padding: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
     @media (max-width: 768px) {
       .about__gallery-descriptions-btn {
         display: none; } }
@@ -1606,17 +1609,21 @@ svg path {
     padding: 0;
     position: relative;
     margin: 0;
-    width: 90%; }
+    width: 90%;
+    height: 631px; }
     @media (max-width: 1280px) {
       .feedback__form {
-        padding: 30px; } }
+        padding: 30px;
+        height: auto; } }
     @media (max-width: 980px) {
       .feedback__form {
         margin-right: 0;
-        width: 100%; } }
+        width: 100%;
+        height: auto; } }
     @media (max-width: 768px) {
       .feedback__form {
-        padding: 40px 24px 56px; } }
+        padding: 40px 24px 56px;
+        height: auto; } }
   .feedback__form-img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1630,7 +1637,7 @@ svg path {
             flex-direction: column;
     padding: 0;
     margin: 67px 89px 70px 0;
-    width: 40%; }
+    width: 30%; }
     @media (max-width: 768px) {
       .feedback__form-img {
         display: none; } }
@@ -1652,13 +1659,13 @@ svg path {
     font-size: 16px;
     padding: 0;
     margin: 0; }
-  .feedback__form-headline h2 {
+  .feedback__form-headline {
     margin: 0;
     padding: 0; }
-    .feedback__form-headline h2--sign {
+    .feedback__form-headline--sign {
       margin: 0;
       padding: 0; }
-    .feedback__form-headline h2--name {
+    .feedback__form-headline--name {
       margin: 0;
       padding-top: 32px;
       padding-bottom: 20px;
@@ -1666,7 +1673,7 @@ svg path {
       font-weight: 500;
       font-size: 20px;
       letter-spacing: 0.02em; }
-    .feedback__form-headline h2--contacts {
+    .feedback__form-headline--contacts {
       margin: 0;
       padding-bottom: 28px;
       font-style: normal;
@@ -1862,6 +1869,9 @@ svg path {
       .feedback__formletter-consent--file .input__file-icon {
         cursor: pointer; }
   .feedback__form-success {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1869,14 +1879,15 @@ svg path {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: 66px 215px 0 232px;
-    padding: 0;
+    margin: 0;
+    padding-top: 66px;
     background-color: #fff;
     z-index: 100;
-    width: 55%; }
+    padding-top: 66px;
+    width: 70%; }
+    @media (max-width: 768px) {
+      .feedback__form-success {
+        width: 100%; } }
     .feedback__form-success--content {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2020,6 +2031,9 @@ svg path {
   color: black;
   padding: 10px;
   background-color: #fff; }
+  .modal__content--close.btn-close.m-feedback {
+    right: 33px;
+    top: 26px; }
   .modal__content--close {
     position: absolute;
     margin: 0;
