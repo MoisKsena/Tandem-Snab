@@ -38,8 +38,10 @@ $('.main-nav__burger').click(function()
       
       
       $('.ideas__content-idea', 'article.ideas__content-layout').removeClass('m-active');
+      $('.ideas__content-idea', 'article.ideas__content-layout').css("display", "none"); //добавила я
       var tabIdSelector = '#' + $(evt.currentTarget).data('tabId');
       $(tabIdSelector).addClass('m-active');
+      $(tabIdSelector).css("display", "flex"); //добавила я
     });
   }
 
@@ -68,7 +70,21 @@ $(window).scroll(function() {
 }).scroll();
 }
 
+//кнопка "Вверх"
+var btn = $('#buttonUp');
 
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 1000) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '500');
+});
 
 
 //плавающие меню
@@ -198,21 +214,29 @@ closeModal.on('click',event => {
 
 var pageModal = document.querySelector(".overlay");
 pageModal.addEventListener('click', event => {
-    var popUp = document.querySelector(".modal__content");
-    var isInPopUp = popUp.contains(event.srcElement) || popUp == event.srcElement;
-    if (!isInPopUp) {
-      event.preventDefault();
+  var popUp = document.querySelector(".modal__content");
+  var isInPopUp = popUp.contains(event.srcElement) || popUp == event.srcElement;
+  if (!isInPopUp) {
+    event.preventDefault();
 
-      closePopup();
-    };
-  });
+    closePopup();
+  };
+});
+
+var pageConsult = $(".j-consult");
+pageConsult.on('click', event => {
+  event.preventDefault();
+
+  $('.header__oder-block').css("display", "none");
+  $('#consult').addClass('m-active');
+});
 
 //validation
 function initFormSubmitHandler()
 {
   $("form").data("validator").settings.submitHandler = function()
   {
-  
+    $('#consult').removeClass('m-active');
     $('.feedback__formletter').addClass('m-active');
     $('.feedback__form-success').removeClass('m-active');
     return false;
@@ -221,11 +245,11 @@ function initFormSubmitHandler()
 }
 
 jQuery(document).ready(function() {
-    
+  initScroll();
   jQuery('input[data-inputmask]').inputmask();
   initLinks();
   initTabs();
   initSwipers(); //swiper
   initFormSubmitHandler(); 
-  initScroll();
+  
 });

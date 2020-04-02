@@ -2,11 +2,22 @@
   padding: 0;
   margin-top: 112px;
 
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
+
   &__content-block-text {
     text-align: left;
     padding-left: 136px;
     padding-bottom: 56px;
+    padding-right: 0;
     margin: 0;
+
+    @media (max-width: 768px) {
+      padding-left: 22px;
+      padding-bottom: 40px;
+      padding-right: 40px;
+    }
   }
 
   &__content-block {
@@ -15,6 +26,11 @@
     margin-bottom: 96px;
     padding: 0;
     height: 670px;
+
+    @media (max-width: 768px) {
+      height: auto;
+      margin-bottom: 56px;
+    }
   }
 
   &__content-block-list {
@@ -24,6 +40,11 @@
     margin: 0;
     padding: 0;
     width: 33.33%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 0 24px;
+    }
   }
  
   &__content-block-list-item {
@@ -90,6 +111,13 @@
     height: 483px;
     margin-left: 25px;
     margin-right: 0;
+  }
+
+  &__content-block-img.m-materials-1,
+  &__content-block-img.m-materials-2 {
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
  
 } 

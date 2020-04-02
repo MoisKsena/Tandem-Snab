@@ -13,7 +13,7 @@
 
 </head>
 <body>
-
+  <a id="buttonUp"></a>
   <div class="wrapper">
 
   <header class="header">
@@ -106,22 +106,81 @@
 
     <article class="header__oder">
       <div class="header__oder-block">
-        <h2 class="header__oder-block-title">Создаём уникальную мебель в стиле Loft по вашей задумке</h2>
+        <h2 class="header__oder-block-title">Создаём уникальную мебель&nbsp;в&nbsp;стиле Loft по вашей задумке</h2>
         <div class="header__oder-block-text">
           <p>Гарантируем качество материалов и производства</p>
-          <p>Выполняем работы в установленные сроки</p>
-          <p>Предлагаем цены на 30% ниже рыночных</p>
+          <p>Выполняем работы в&nbsp;установленные сроки</p>
+          <p>Предлагаем цены на 30% ниже&nbsp;рыночных</p>
+        </div>
+        
+        <button class="btn header__oder-block-btn j-consult">Получить консультацию</button>
+      </div>
+
+       <!-- </form> -->
+
+      <form method="post" id="consult" class="header__formletter m-consult" novalidate="novalidate">
+       
+        <div class="header__formletter-checkin">
+          <div class="header__formletter-personal" style="border: none;">
+            <div class="header__formletter-row">
+              <!-- <label for="name">Имя</label>  -->
+              <input id="name" type="text" name="name-consult" minlength="3" data-val="true" data-val-required="укажите ваше имя" class="feedback__formletter-personal--namefield" placeholder="Ваше имя*"/>
+              <span class="field-validation-valid" data-valmsg-for="name-consult" data-valmsg-replace="true"></span>
+            </div>
+            <div class="header__formletter-row">
+              <!-- <label for="tel">Телефон</label> -->
+              <input type="text" id="tel" name="tel-consult" 
+                data-inputmask="'mask': '+7 (999) 999-99-99'" inputmode="numeric"
+                class="feedback__formletter-personal--telfield" 
+                data-val="true" 
+                data-val-regex-pattern="\+7 \((\d{3})\) (\d{3})-(\d{2})-(\d{2})"
+                data-val-required="Введите номер телефона"
+                placeholder="+7 (___) ___–__–__*"
+                 />
+                <span class="field-validation-valid" data-valmsg-for="tel-consult" data-valmsg-replace="true"></span>
+            </div> 
+            <div class="header__formletter-row">
+              <input id='email' type="email" name="email-consult" class="feedback__formletter-personal--emailfield" 
+                data-val="true" 
+                data-val-required="укажите ваш e-mail"
+                placeholder="Почта*"
+              /> 
+              <span class="field-validation-valid" data-valmsg-for="email-consult" data-valmsg-replace="true"></span>
+            </div>
+
+            <button class="feedback__formletter-consent--btn m-consult">Получить консультацию</button>
+
+          </div>
+         
+ 
+        </div>
+      </form>
+
+      <div class="feedback__form-success m-active m-consult">
+        <button class="modal__content--close btn-close m-feedback" onclick=" $('.feedback__form-success').addClass('m-active'); $('.feedback__formletter').removeClass('m-active'); $('.header__oder-block').css('display', 'block');"></button>
+        <div class="feedback__form-success--content">
+          
+          <div class="feedback__form-success--text">
+            <h2 class="feedback__form-success--name">Спасибо!</h2>
+            <p class="feedback__form-success--sign m-bold">Перезвоним Вам в течение 10 мин<br />в рабочее время.</p>
+            <p class="feedback__form-success--sign">Мы работаем:<br />пн-пт 10:00 - 19:00<br />сб 11:00-17:00</p>
+          </div>
+          
         </div>
 
-        <a href="#feedback"><button class="btn header__oder-block-btn">Получить консультацию</button></a>
       </div>
+          <!-- </form> -->
+          
+        </div>
+      </div>
+      
     </article>
   </header>
 
   <section class="ideas" id="ideas">
     <div class="ideas__content">
 
-      <h2 class="ideas__content-text">Всё начинается с идеи<br />создать уникальный интерьер</h2>
+      <h2 class="ideas__content-text m-content">Всё&nbsp;начинается&nbsp;с идеи создать уникальный интерьер</h2>
         <article class="ideas__content-inner">
           <div class="ideas__content-inner-block">
             <div class="ideas__content-inner-block m-block-1"></div>
@@ -148,7 +207,7 @@
         <article class="ideas__content-layout">
           <div class="ideas__content-layout-bcg"></div>
 
-          <h2 class="ideas__content-text m-ideas">... с идеи, которая приобретает форму<br />на производстве Wood & Metal Lab</h2>
+          <h2 class="ideas__content-text m-ideas">...&nbsp;с&nbsp;идеи,&nbsp;которая приобретает форму<br />на&nbsp;производстве Wood&nbsp;&&nbsp;Metal&nbsp;Lab</h2>
 
           <nav class="ideas__menu">
             <ul class="main-nav__list m-ideas">
@@ -189,9 +248,10 @@
                         <div class="ideas__container-effects-hoverblock">
                           <div id="al-c" class="ideas__content-block-left-top">
                             <div class="ideas__container m-hover-text">
+                              <p class="ideas__content-hover-text">Барные стулья и стол. Столешница и сидушки из сосны</p>
                               <ul class="ideas__content-list">
-                                <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
-                                <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
+                                <li class="ideas__content-list-item">цена 20&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок 16&nbsp;дней</li>
                               </ul>
                               <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
                             </div>
@@ -210,9 +270,10 @@
                         <div class="ideas__container-effects-hoverblock">
                           <div id="al-c" class="ideas__content-block-left-bottom">
                             <div class="ideas__container m-hover-text">
+                              <p class="ideas__content-hover-text">Стол и стул из ДСП в частный дом по эскизу клиента. </p>
                               <ul class="ideas__content-list">
-                                <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
-                                <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
+                                <li class="ideas__content-list-item">цена 12&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок 12&nbsp;дней</li>
                               </ul>
                               <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
                             </div>
@@ -233,9 +294,10 @@
                         <div class="ideas__container-effects-hoverblock">
                           <div id="al-c" class="ideas__content-block-center-top">
                             <div class="ideas__container m-hover-text">
+                              <p class="ideas__content-hover-text">Стол из массива карагача на металлическом<br />подстолье и металлический стул по заказу<br />дизайн студии “Цветочки”</p>
                               <ul class="ideas__content-list">
-                                <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
-                                <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
+                                <li class="ideas__content-list-item">цена 25&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок 20&nbsp;дней</li>
                               </ul>
                               <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
                             </div>
@@ -254,9 +316,10 @@
                         <div class="ideas__container-effects-hoverblock">
                           <div id="al-c"  class="ideas__content-block-center-bottom">
                             <div class="ideas__container m-hover-text">
+                              <p class="ideas__content-hover-text">Стол и диван на металлических каркасах.<br />Столешница и подлокотники из масива<br />ореха. Диванные подушки из канваса.</p>
                               <ul class="ideas__content-list">
-                                <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
-                                <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
+                                <li class="ideas__content-list-item">цена 32&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок 35&nbsp;дней</li>
                               </ul>
                               <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
                             </div>
@@ -278,9 +341,10 @@
                         <div class="ideas__container-effects-hoverblock">
                           <div id="al-c" class="ideas__content-block-right-top">
                             <div class="ideas__container m-hover-text">
+                              <p class="ideas__content-hover-text">Каменная столешница. Подстолье<br />и стулья.</p>
                               <ul class="ideas__content-list">
-                                <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
-                                <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
+                                <li class="ideas__content-list-item">цена 20&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок 16&nbsp;дней</li>
                               </ul>
                               <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
                             </div>
@@ -299,9 +363,10 @@
                         <div class="ideas__container-effects-hoverblock">
                           <div id="al-c" class="ideas__content-block-right-bottom">
                             <div class="ideas__container m-hover-text">
+                              <p class="ideas__content-hover-text">Стол из массива ореха<br />на металлическом подстолье<br />для ресторана “Дубки”</p>
                               <ul class="ideas__content-list">
-                                <li class="ideas__content-list-item">цена от 1&nbsp;000&nbsp;₽</li>
-                                <li class="ideas__content-list-item">срок от 5&nbsp;дней</li>
+                                <li class="ideas__content-list-item">цена 12&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок 12&nbsp;дней</li>
                               </ul>
                               <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
                             </div>
@@ -315,7 +380,146 @@
 
             </div>
             <!-- экран-КОНСОЛИ И СТЕЛАЖИ -->
-            <div class="ideas__content-idea" id="console">
+            <div class="ideas__content-idea" id="console" style="display: none;">
+
+              <div class="ideas__content-idea-block-left">
+                <div id="al-c" class="ideas__content-block-left-top">
+                  <div class="ideas__container">
+                    <div class="ideas__container-effects">
+                      <div class="ideas__container-effects-block">
+                        <img src="img/tables-3.jpg" alt="tables" class="ideas__container-effects-block-img m-top">
+                        <div class="ideas__container-effects-hoverblock">
+                          <div id="al-c" class="ideas__content-block-left-top">
+                            <div class="ideas__container m-hover-text">
+                              <p class="ideas__content-hover-text">Барные стулья и стол. Столешница и сидушки из сосны</p>
+                              <ul class="ideas__content-list">
+                                <li class="ideas__content-list-item">цена 20&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок 16&nbsp;дней</li>
+                              </ul>
+                              <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="al-c" class="ideas__content-block-left-bottom">
+                  <div class="ideas__container">
+                    <div class="ideas__container-effects">
+                      <div class="ideas__container-effects-block">
+                        <img src="img/tables-1.jpg" alt="tables" class="ideas__container-effects-block-img m-bottom">
+                        <div class="ideas__container-effects-hoverblock">
+                          <div id="al-c" class="ideas__content-block-left-bottom">
+                            <div class="ideas__container m-hover-text">
+                              <p class="ideas__content-hover-text">Стол и стул из ДСП в частный дом по эскизу клиента. </p>
+                              <ul class="ideas__content-list">
+                                <li class="ideas__content-list-item">цена 12&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок 12&nbsp;дней</li>
+                              </ul>
+                              <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ideas__content-idea-block-center"> 
+                <div id="al-c" class="ideas__content-block-center-top">
+                  <div class="ideas__container">
+                    <div class="ideas__container-effects">
+                      <div class="ideas__container-effects-block">
+                        <img src="img/tables-6.jpg" alt="tables" class="ideas__container-effects-block-img m-center-top">
+                        <div class="ideas__container-effects-hoverblock">
+                          <div id="al-c" class="ideas__content-block-center-top">
+                            <div class="ideas__container m-hover-text">
+                              <p class="ideas__content-hover-text">Стол из массива карагача на металлическом<br />подстолье и металлический стул по заказу<br />дизайн студии “Цветочки”</p>
+                              <ul class="ideas__content-list">
+                                <li class="ideas__content-list-item">цена 25&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок 20&nbsp;дней</li>
+                              </ul>
+                              <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="al-c" class="ideas__content-block-center-bottom">
+                  <div class="ideas__container">
+                    <div class="ideas__container-effects">
+                      <div class="ideas__container-effects-block">
+                        <img src="img/tables-5.jpg" alt="tables" class="ideas__container-effects-block-img m-center-bottom">
+                        <div class="ideas__container-effects-hoverblock">
+                          <div id="al-c"  class="ideas__content-block-center-bottom">
+                            <div class="ideas__container m-hover-text">
+                              <p class="ideas__content-hover-text">Стол и диван на металлических каркасах.<br />Столешница и подлокотники из масива<br />ореха. Диванные подушки из канваса.</p>
+                              <ul class="ideas__content-list">
+                                <li class="ideas__content-list-item">цена 32&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок 35&nbsp;дней</li>
+                              </ul>
+                              <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
+                            </div>
+                          </div>
+                        </div>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ideas__content-idea-block-right">
+                <div id="al-c" class="ideas__content-block-right-top">
+                  <div class="ideas__container">
+                    <div class="ideas__container-effects">
+                      <div class="ideas__container-effects-block">
+                        <img src="img/tables-2.jpg" alt="tables" class="ideas__container-effects-block-img m-top">
+                        <div class="ideas__container-effects-hoverblock">
+                          <div id="al-c" class="ideas__content-block-right-top">
+                            <div class="ideas__container m-hover-text">
+                              <p class="ideas__content-hover-text">Каменная столешница. Подстолье<br />и стулья.</p>
+                              <ul class="ideas__content-list">
+                                <li class="ideas__content-list-item">цена 20&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок 16&nbsp;дней</li>
+                              </ul>
+                              <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="al-c" class="ideas__content-block-right-bottom">
+                  <div class="ideas__container">
+                    <div class="ideas__container-effects">
+                      <div class="ideas__container-effects-block">
+                        <img src="img/tables-4.jpg" alt="tables" class="ideas__container-effects-block-img m-bottom">
+                        <div class="ideas__container-effects-hoverblock">
+                          <div id="al-c" class="ideas__content-block-right-bottom">
+                            <div class="ideas__container m-hover-text">
+                              <p class="ideas__content-hover-text">Стол из массива ореха<br />на металлическом подстолье<br />для ресторана “Дубки”</p>
+                              <ul class="ideas__content-list">
+                                <li class="ideas__content-list-item">цена 12&nbsp;000&nbsp;₽</li>
+                                <li class="ideas__content-list-item">срок 12&nbsp;дней</li>
+                              </ul>
+                              <a href="#feedback"><button class="btn ideas__content-idea-block-btn">ЗАКАЗАТЬ</button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
           
             </div>
             <!-- экран-ОБУВНИЦЫ -->
@@ -342,6 +546,7 @@
           </div>
         </article>
 
+        <!-- мобильная версия меню -->
         <article class="ideas__content-layout-mobile">
           <div class="ideas__content-layout-bcg"></div>
 
@@ -352,37 +557,37 @@
              <section class="ideas__accordion-tab-content"> 
               <div class="swiper__ideas-wrapper">
                 <div class="swiper-container j-swiper-mobile-ideas">
-                  <div class="swiper-wrapper">
+                  <div class="swiper-wrapper m-ideas-swiper-wrapper">
                     <!-- слайды/фото для предпроссмотра -->
                     <div class="swiper-slide">
                       <img class="swiper__ideas-foto" src="img/tables-1.jpg" alt="#">
-                      <div class="">Стол и стул из ДСП по эскизу клиента в частный дом</div>
+                      <div class="swiper-slide-text">Стол и стул из ДСП по эскизу клиента в частный дом</div>
                     </div>
                     <div class="swiper-slide">
                       <img class="swiper__ideas-foto" src="img/tables-2.jpg" alt="#">
-                      <div class="">Барные стулья и стол. Столешница и сидушки из сосны</div>
+                      <div class="swiper-slide-text">Барные стулья и стол. Столешница и сидушки из сосны</div>
                     </div>
                     <div class="swiper-slide">
                       <img class="swiper__ideas-foto" src="img/tables-3.jpg" alt="#">
-                      <div class="">Стол и диван на металлических каркасах. Столешница
+                      <div class="swiper-slide-text">Стол и диван на металлических каркасах. Столешница
                         и подлокотники из масива ореха. Диванные подушки из канваса</div>
                     </div>
                     <div class="swiper-slide">
                       <img class="swiper__ideas-foto" src="img/tables-4.jpg" alt="#">
-                      <div class="">Стол из массива ореха на металлическом подстолье для ресторана “Дубки”</div>
+                      <div class="swiper-slide-text">Стол из массива ореха на металлическом подстолье для ресторана “Дубки”</div>
                     </div>
                     <div class="swiper-slide">
                       <img class="swiper__ideas-foto" src="img/tables-5.jpg" alt="#">
-                      <div class="">Каменная столешница. Подстолье и стулья</div>
+                      <div class="swiper-slide-text">Каменная столешница. Подстолье и стулья</div>
                     </div>
                     <div class="swiper-slide">
                       <img class="swiper__ideas-foto" src="img/tables-6.jpg" alt="#">
-                      <div class="">Стол из массива карагача на металлическом подстолье и металлический стул по заказу дизайн студии “Цветочки”</div>
+                      <div class="swiper-slide-text">Стол из массива карагача на металлическом подстолье и металлический стул по заказу дизайн студии “Цветочки”</div>
                     </div>
                     <!--  -->
                   </div>
 
-                  <div class="swiper-pagination"></div>
+                  <div class="swiper-pagination m-ideas-mobile"></div>
                 </div>
               </div>
 
@@ -393,49 +598,43 @@
             <div class="ideas__accordion-tab">
              <input type="checkbox" id="tab2" name="tab-group">
              <label for="tab2" class="ideas__accordion-tab-title">КОНСОЛИ И СТЕЛАЖИ</label> 
-             <article class="ideas__accordion-tab-content"> tab-content
-              Нет, на HTML5 по прежнему нельзя программировать, основным языком является JavaScript. 
-              Так что в разговоре лучше не упоминать, что умеешь программировать на HTML5, засмеют.
+             <article class="ideas__accordion-tab-content"> 
+
              </article> 
             </div> 
             <div class="ideas__accordion-tab">
-              <input type="checkbox" id="tab2" name="tab-group">
-              <label for="tab2" class="ideas__accordion-tab-title">ОБУВНИЦЫ</label> 
-              <article class="ideas__accordion-tab-content"> tab-content
-                Нет, на HTML5 по прежнему нельзя программировать, основным языком является JavaScript. 
-                Так что в разговоре лучше не упоминать, что умеешь программировать на HTML5, засмеют.
+              <input type="checkbox" id="tab3" name="tab-group">
+              <label for="tab3" class="ideas__accordion-tab-title">ОБУВНИЦЫ</label> 
+              <article class="ideas__accordion-tab-content"> 
+
               </article> 
             </div>
             <div class="ideas__accordion-tab">
-              <input type="checkbox" id="tab2" name="tab-group">
-              <label for="tab2" class="ideas__accordion-tab-title">ШИРМЫ</label> 
-              <article class="ideas__accordion-tab-content"> tab-content
-                Нет, на HTML5 по прежнему нельзя программировать, основным языком является JavaScript. 
-                Так что в разговоре лучше не упоминать, что умеешь программировать на HTML5, засмеют.
+              <input type="checkbox" id="tab4" name="tab-group">
+              <label for="tab4" class="ideas__accordion-tab-title">ШИРМЫ</label> 
+              <article class="ideas__accordion-tab-content"> 
+
               </article> 
             </div> 
             <div class="ideas__accordion-tab">
-              <input type="checkbox" id="tab2" name="tab-group">
-              <label for="tab2" class="ideas__accordion-tab-title">КРОВАТИ</label> 
-              <article class="ideas__accordion-tab-content"> tab-content
-                Нет, на HTML5 по прежнему нельзя программировать, основным языком является JavaScript. 
-                Так что в разговоре лучше не упоминать, что умеешь программировать на HTML5, засмеют.
+              <input type="checkbox" id="tab5" name="tab-group">
+              <label for="tab5" class="ideas__accordion-tab-title">КРОВАТИ</label> 
+              <article class="ideas__accordion-tab-content"> 
+
               </article> 
             </div> 
             <div class="ideas__accordion-tab">
-              <input type="checkbox" id="tab2" name="tab-group">
-              <label for="tab2" class="ideas__accordion-tab-title">ЛЕСТНИЦЫ</label> 
-              <article class="ideas__accordion-tab-content"> tab-content
-                Нет, на HTML5 по прежнему нельзя программировать, основным языком является JavaScript. 
-                Так что в разговоре лучше не упоминать, что умеешь программировать на HTML5, засмеют.
+              <input type="checkbox" id="tab6" name="tab-group">
+              <label for="tab6" class="ideas__accordion-tab-title">ЛЕСТНИЦЫ</label> 
+              <article class="ideas__accordion-tab-content"> 
+
               </article> 
             </div> 
             <div class="ideas__accordion-tab">
-              <input type="checkbox" id="tab2" name="tab-group">
-              <label for="tab2" class="ideas__accordion-tab-title">ДРУГОЕ</label> 
-              <article class="ideas__accordion-tab-content"> tab-content
-                Нет, на HTML5 по прежнему нельзя программировать, основным языком является JavaScript. 
-                Так что в разговоре лучше не упоминать, что умеешь программировать на HTML5, засмеют.
+              <input type="checkbox" id="tab7" name="tab-group">
+              <label for="tab7" class="ideas__accordion-tab-title">ДРУГОЕ</label> 
+              <article class="ideas__accordion-tab-content"> 
+
               </article> 
             </div> 
           </div>
@@ -448,7 +647,7 @@
 
     <div class="materials__inner">
       <article class="materials__content-block-wrapper">
-        <h2 class="materials__content-block-text">Погрузитесь в мир текстур, цвета<br />и тактильных ощущений</h2>
+        <h2 class="materials__content-block-text">Погрузитесь в&nbsp;мир текстур, цвета<br />и тактильных ощущений</h2>
 
         <div class="materials__content-block">
           <div class="materials__content-block-img m-materials-1"></div>
@@ -515,7 +714,12 @@
           <div class="about__gallery-descriptions">
               <article class="about__gallery-demo">
                 <div class="about__gallery-demo-descr">
-                  <h2 class="about__gallery-demo-descr-title">Wood & Metal Lab —<br/>место где оживают идеи</h2>
+                  <h2 class="about__gallery-demo-descr-title">Wood&nbsp;&&nbsp;Metal Lab&nbsp;— место, где оживают идеи</h2>
+
+                  <div class="about__gallery-demo-text-wrapper">
+                    <p class="about__gallery-demo-text">Мастерская по производству эксклюзивных вещей в Санкт-Петербурге. Изготавливаем мебель и предметы интерьера в стиле Loft под ключ.</p>
+                    <p class="about__gallery-demo-text">Разрабатываем и воплощаем в жизнь предметы интерьера для частных лиц, дизайнеров и коммерческих организаций.</p>
+                  </div>
 
                   <div class="about__gallery-demo-slider">
                     <div class="swiper-container j-swiper-mobile">
@@ -529,10 +733,6 @@
                     </div>
                   </div>
                   
-                  <div class="about__gallery-demo-text-wrapper">
-                    <p class="about__gallery-demo-text">Мастерская по производству эксклюзивных вещей в Санкт-Петербурге. Изготавливаем мебель и предметы интерьера в стиле Loft под ключ.</p>
-                    <p class="about__gallery-demo-text">Разрабатываем и воплощаем в жизнь предметы интерьера для частных лиц, дизайнеров и коммерческих организаций.</p>
-                  </div>
                 </div>
               </article>
 
@@ -593,7 +793,7 @@
       <div class="feedback__form">
       
         <form method="post" id="feedbackForm" class="feedback__formletter" novalidate="novalidate">
-          <label for="message" class="feedback__form-headline"><h2>Давайте вместе реализуем<br />вашу задумку</h2></label>
+          <h2 class="feedback__form-headline">Давайте&nbsp;вместе реализуем вашу задумку</h2>
          
           <div class="feedback__formletter-checkin">
             <div class="feedback__formletter-personal" style="border: none;">
@@ -644,13 +844,13 @@
                 </div>
 
               </div>
-              <label for="agree" class="personal"><a class="js-modal personal-text" href="#">Нажимая на кнопку вы подтверждаете, что<br />ознакомлены с политикой конфиденциальности</a></label>
+              <label for="agree" class="personal"><a class="js-modal personal-text" href="#">Нажимая на кнопку вы подтверждаете, что ознакомлены с политикой конфиденциальности</a></label>
             </div> 
           </div>
         </form>
 
         <div class="feedback__form-success m-active">
-          <button class="modal__content--close btn-close" onclick=" $('.feedback__form-success').addClass('m-active'); $('.feedback__formletter').removeClass('m-active');"></button>
+          <button class="modal__content--close btn-close m-feedback" onclick=" $('.feedback__form-success').addClass('m-active'); $('.feedback__formletter').removeClass('m-active');"></button>
           <div class="feedback__form-success--content">
             
             <div class="feedback__form-success--text">
@@ -852,17 +1052,19 @@
   <section class="instagram">
     <h2 class="instagram__title">Инстаграм</h2>
 
-    <div class="swiper-btnprev-instagram">
-      <svg class="swiper-btnprev--color">
-        <use xlink:href="img/sprite.svg#btn-left"></use>
-      </svg>
+    <div class="instagram__btn-block">
+      <div class="swiper-btnprev-instagram">
+        <svg class="swiper-btnprev--color">
+          <use xlink:href="img/sprite.svg#btn-left"></use>
+        </svg>
+      </div>
+      <div class="swiper-btnnext-instagram">
+        <svg class="swiper-btnnext--color">
+          <use xlink:href="img/sprite.svg#btn-right"></use>
+        </svg>
+      </div>
     </div>
-    <div class="swiper-btnnext-instagram">
-      <svg class="swiper-btnnext--color">
-        <use xlink:href="img/sprite.svg#btn-right"></use>
-      </svg>
-    </div>
-
+    
     <div class="instagram__gallery">
 
       <div class="swiper-container m-instagram j-swiper-insta">
@@ -877,19 +1079,35 @@
       </div>
 
     </div>
+
+    <div class="about__gallery-demo-slider">
+      <div class="swiper-container j-swiper-mobile">
+        <div class="swiper-wrapper">
+          <!-- слайды/фото для предпроссмотра -->
+          <div class="swiper-slide"><img class="swiper__demo-foto" src="img/instagram-1.jpg" alt="#"></div>
+          <div class="swiper-slide"><img class="swiper__demo-foto" src="img/instagram-2.jpg" alt="#"></div>
+          <div class="swiper-slide"><img class="swiper__demo-foto" src="img/instagram-3.jpg" alt="#"></div>
+          <div class="swiper-slide"><img class="swiper__demo-foto" src="img/instagram-4.jpg" alt="#"></div>
+          <!-- <div class="swiper-slide"><img class="projects__demo-foto" src="img/img1.jpg" alt="#" data-imageid='4'></div> -->
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="address" id="address">
     <div class="address__content">
       <h2 class="address__headline">Wood & Metal Lab</h2>
-      <p class="address__sign">мастерская индивидуального производства<br />мебели и предметов интерьера</p>
+      <p class="address__sign">мастерская индивидуального производства мебели и&nbsp;предметов интерьера</p>
 
       <div class="address__content-wrapper">
         <div class="address__content-contacts">
           <div class="address__content-connection">
             <a href="tel: +7 965 029-60-02" class="icon address__content-contacts--tel">+7 965 029-60-02</a>
             <p class="address__content-contacts--email m-margin"><a href="mailto:woodmatallab@yandex.ru" class="address__content-contacts--email">woodmatallab@yandex.ru</a></p>
-            
+          </div>
+          <div class="address__content-connection-mobile">
+            <p>пн-пт 10:00-19:00</p>
+            <p>сб 11:00-17:00</p>
           </div>
           <div class="address__content-contacts-branch">
             <p class="address__content-contacts--bold m-margin">Офис</p>
@@ -901,7 +1119,7 @@
          
         </div>
         <div class="address__content-address">
-          <div class="address__content-connection">
+          <div class="address__content-connection m-time">
             <p>пн-пт 10:00-19:00</p>
             <p>сб 11:00-17:00</p>
           </div>
@@ -931,12 +1149,12 @@
         </div> 
         <span class="feedback__formletter-consent--confirm m-address">
           <input type="checkbox" id="chack_social" class="feedback__checkbox m-address"/>
-          <label for="chack_social" class="personal-social m-address">Связаться<br />по&nbsp;WhatsApp</label>
+          <label for="chack_social" class="personal-social m-address">Связаться по&nbsp;WhatsApp</label>
         </span> 
 
         <button class="feedback__formletter-consent--btn m-address">СВЯЗАТЬСЯ</button>
       </div>
-      <label class="personal"><a class="js-modal personal-text" href="#">Нажимая на кнопку вы подтверждаете, что<br />ознакомлены с политикой конфиденциальности</a></label>
+      <label class="personal"><a class="js-modal personal-text" href="#">Нажимая на кнопку вы подтверждаете, что ознакомлены с политикой конфиденциальности</a></label>
       <div class="address__content-icons">
         <a target="about:blank" href="https://www.instagram.com/woodmetallab/" class="address__content-icons--instargam">
           <svg width="30" height="30">

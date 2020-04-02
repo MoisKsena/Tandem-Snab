@@ -16,6 +16,10 @@
     @media (max-width: 980px) {
       padding: 56px 60px 0;
     }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &__block {

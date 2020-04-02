@@ -1,42 +1,51 @@
 .feedback {
+  display: flex;
   position: relative;
   flex-direction: column;
   flex-wrap: nowrap;
   color: $black;
   padding: 0;
   margin-top: 96px;
+  width: 100%;
 
   @media (max-width: 980px) {
+    margin-top: 40px;
   }
 
   &__form {
     display: flex;
     background-color: $white;
-    display: flex;
     justify-content: space-between;
     padding: 0;
-    //margin-right: 136px;
-    padding: 67px 90px 68px 130px;
-    //height: 630px;
     position: relative;
+    margin: 0;
     width: 90%;
+    height: 631px;
 
     @media (max-width: 1280px) {
       padding: 30px;
+      height: auto;
     }
 
     @media (max-width: 980px) {
       margin-right: 0;
       width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      padding: 40px 24px 56px;
+      height: auto;
     }
   }
 
   &__form-img {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    margin: 0;
     padding: 0;
-    width: 40%;
+    margin: 67px 89px 70px 0;
+    width: 30%;
 
     @media (max-width: 768px) {
       display: none;
@@ -69,7 +78,7 @@
     margin: 0;
   }
 
-  &__form-headline h2 {
+  &__form-headline {
     margin: 0;
     padding: 0;
 
@@ -87,7 +96,7 @@
       font-size: 20px;
       letter-spacing: 0.02em;
 
-      @media (min-width: 768px) {
+      @media (max-width: 768px) {
       }
     }
 
@@ -98,9 +107,6 @@
       font-weight: 300;
       font-size: 18px;
       letter-spacing: 0.02em;
-
-      @media (min-width: 768px) {
-      }
     }
   }
 
@@ -108,9 +114,9 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0;
     padding: 0;
-    width: 60%;
+    margin: 64px 80px 68px 136px;
+    width: 50%;
 
     @media (max-width: 1280px) {
       margin-right: 30px;
@@ -139,6 +145,11 @@
     outline: none;
     overflow:auto;
     resize: none;
+
+    @media (max-width: 768px) {
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
   }
 
   textarea:focus, input:focus {
@@ -150,6 +161,7 @@
     position: relative;
     flex-direction: column;
     margin: 0;
+    padding: 0;
     font-family: $font-family;
     font-size: 16px;
     line-height: 24px;
@@ -158,10 +170,14 @@
     @media (max-width: 1200px) {
       width: 100%;
     }
+
+    @media (max-width: 768px) {
+      padding-top: 32px;
+    }
   }
 
   &__formletter-personal {
-    margin-top: 80px;
+    margin-top: 50px;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -180,6 +196,7 @@
 
       @media (max-width: 768px) {
         width: 100%;
+        padding-bottom: 24px;
       }
     }
 
@@ -314,14 +331,19 @@
   }
 
   &__form-success {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 0;
+    margin: 0;
+    padding-top: 66px;
     background-color: #fff;
     z-index: 100;
-    width: 55%;
+    padding-top: 66px;
+    width: 70%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
 
     &--content {
       display: flex;
@@ -343,9 +365,6 @@
       font-size: 30px;
       line-height: 51px;
       text-align: center;
-
-      @media (min-width: 768px) {
-      }
     }
 
     &--sign {
@@ -355,9 +374,6 @@
       font-size: 18px;
       line-height: 22px;
       text-align: center;
-
-      @media (min-width: 768px) {
-      }
     }
 
     &--sign.m-bold {
@@ -377,9 +393,6 @@
       font-weight: 500;
       font-size: 14px;
       outline: none;
-
-      @media (min-width: 768px) {
-      }
     }
 
     &--btn:hover {
@@ -390,6 +403,11 @@
 
   &__form-success.m-active {
     display: none;
+  }
+
+  &__form-success.m-consult {
+    padding-top: 0;
+    margin: 0;
   }
 
   &__form-success.modal--open {
@@ -421,6 +439,11 @@
 
 .personal {
   margin-top: 30px;
+  width: 70%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .personal-text{
@@ -478,6 +501,11 @@
     padding: 10px;
     background-color: #fff;
 
+    &--close.btn-close.m-feedback {
+      right: 33px;
+      top: 26px;
+    }
+
     &--close {
       position: absolute;
       margin: 0;
@@ -524,7 +552,7 @@
       cursor: pointer;
       outline: none;
 
-      @media (min-width: 768px) {
+      @media (max-width: 768px) {
         width: 288px;
         font-size: 15px;
         margin-bottom: 117px;
@@ -543,7 +571,7 @@
     padding-top: 97px;
     padding-bottom: 70px;
 
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
       width: 60%;
       padding-bottom: 140px;
     }
@@ -554,7 +582,7 @@
       font-size: 32px;
       line-height: 32px;
 
-      @media (min-width: 768px) {
+      @media (max-width: 768px) {
         font-size: 42px;
         line-height: 49px;
       }
@@ -567,7 +595,7 @@
       font-size: 18px;
       line-height: 150%;
 
-      @media (min-width: 768px) {
+      @media (max-width: 768px) {
         font-size: 24px;
         line-height: 193.78%;
       }
@@ -579,7 +607,7 @@
       font-size: 16px;
       line-height: 150%;
 
-      @media (min-width: 768px) {
+      @media (max-width: 768px) {
         font-size: 22px;
         line-height: 193.78%;
       }
@@ -599,6 +627,10 @@
   }
 }
 
+.input__file {
+  width: 50px;
+}
+
 .input__file-button-text {
   line-height: 1;
   margin-top: 1px;
@@ -611,19 +643,3 @@
 .input__file-icon:hover {
  color: $green;
 }
-
-// :focus::-webkit-input-placeholder {
-//   color: transparent
-// }
- 
-// :focus::-moz-placeholder {
-//   color: transparent
-// }
- 
-// :focus:-moz-placeholder {
-//   color: transparent
-// }
- 
-// :focus:-ms-input-placeholder {
-//   color: transparent
-// }

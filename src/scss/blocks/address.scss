@@ -6,22 +6,14 @@
 
   @media (max-width: 768px) {
     flex-direction: column;
-  }
-  
-  &__content {
-    width: 55%;
-
-    @media (max-width: 768px) {
-      width: 100%;
-    }
+    margin-top: 64px;
   }
 
   &__map {
     width: 45%;
 
     @media (max-width: 768px) {
-      width: 100%;
-      height: 680px;
+      display: none;
     }
   }
 
@@ -34,15 +26,26 @@
     background-color: $white;
     margin: 0;
     padding: 64px 74px 40px 112px;
+    width: 55%;
 
     @media (max-width: 1200px) {
       padding: 50px 40px 40px 60px;
     }
+
+    @media (max-width: 768px) {
+      padding: 0 24px 45px;
+      margin: 0;
+      width: 100%;
+    }
   }
 
   &__headline {
-    padding: 0;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
+    margin: 0;
+
+    @media (max-width: 768px) {
+      padding-bottom: 24px;
+    }
   }
 
   &__sign {
@@ -50,6 +53,11 @@
     line-height: 24px;
     padding: 0;
     margin: 0;
+    width: 75%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   &__content-wrapper {
@@ -58,6 +66,11 @@
     padding: 0;
     justify-content: space-between;
     align-items: baseline;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin-top: 40px;
+    }
   }
 
   &__content-contacts,
@@ -87,8 +100,29 @@
     height: 45px;
   }
 
+  &__content-connection.m-time {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__content-connection-mobile {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+      height: 45px;
+      padding-top: 24px;
+      margin: 0;
+    }
+  }
+
   &__content-contacts-branch {
     margin-top: 32px;
+
+    @media (max-width: 768px) {
+      margin-top: 40px;
+    }
   }
 
   &__content-contacts  div > p,
@@ -124,6 +158,7 @@
   &__content-contacts--tel:hover,
   &__content-contacts--email:hover {
     color: $green;
+    outline: none;
   }
 
   &__content-contacts--bold.m-margin {
@@ -147,7 +182,8 @@
     }
 
     @media (max-width: 768px) {
-      flex-wrap: nowrap;
+      margin-top: 40px;
+      justify-content: flex-end;
     }
   }
 
@@ -186,7 +222,7 @@
 
   .feedback__formletter-personal--tel.m-address {
     @media (max-width: 768px) {
-      width: 50%;
+      width: 100%;
     }
   }
 
@@ -203,6 +239,12 @@
   .feedback__formletter-consent--confirm.m-address {
     display: flex;
     margin-right: 24px;
+
+    @media (max-width: 768px) {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
   }
 
   .feedback__checkbox.m-address {
@@ -212,7 +254,21 @@
   .feedback__formletter-consent--btn.m-address {
     max-width: 174px;
     height: 56px;
+
+    @media (max-width: 768px) {
+      width: 174px;
+      margin-bottom: 24px;
+    }
   }
 }
 
+.feedback__formletter-consent--btn.m-consult {
+  width: 316px;
+  height: 56px;
+  margin-top: auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
 

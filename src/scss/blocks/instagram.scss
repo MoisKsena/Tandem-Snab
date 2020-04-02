@@ -3,28 +3,45 @@
   padding: 0;
   position: relative;
 
+  @media (max-width: 768px) {
+    margin: 96px 24px 0;
+  }
+
   &__title {
     margin: 0;
     padding-left: 105px;
     padding-bottom: 26px;
+
+    @media (max-width: 768px) {
+      padding-left: 0;
+      padding-bottom: 35px;
+    }
+  }
+
+  &__btn-block {
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__gallery {
     padding: 0 24px;
     height: 312px;
 
+    @media (max-width: 768px) {
+      display: none;
+    }
+
     .swiper-container.m-instagram {
       height: 312px;
     }
   }
-
-  
 }
 
 .swiper-btnprev-instagram {
   position: absolute;
   top: 12px;
-  left: 83%;
+  left: 85%;
   outline: none;
   cursor: pointer;
 }

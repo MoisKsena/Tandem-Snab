@@ -176,6 +176,7 @@
 
   &__link:hover {
     color: $green;
+    font-weight: 600;
     padding: 10px 0;
   }
 
@@ -195,7 +196,7 @@
   }
 
   &__link.main-nav__item--active {
-    font-weight: 500;
+    font-weight: 600;
     color: $green;
   }
   
@@ -203,7 +204,7 @@
     display: flex;
     height: fit-content;
 
-    @media (max-width: 760px) { 
+    @media (max-width: 768px) { 
       display: none;
     }
 

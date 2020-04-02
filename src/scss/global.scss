@@ -39,8 +39,8 @@ h2 {
   @media (max-width: 768px) {
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 28px;
+    line-height: 35px;
   }
 }
 
@@ -50,6 +50,12 @@ h3 {
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
+
+  @media (max-width: 768px) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 a {
@@ -86,3 +92,45 @@ svg path {
   color: $black;
 }
 
+//button Up
+#buttonUp {
+  display: inline-block;
+  background-color: $black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 26px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  transform: rotate(90deg);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#buttonUp::after {
+  content: "\003C";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+  
+}
+
+// #buttonUp:hover {
+//   cursor: pointer;
+//   background-color: $green;
+// }
+
+#buttonUp:active {
+  background-color: $green;
+}
+
+#buttonUp.show {
+  opacity: 1;
+  visibility: visible;
+}
