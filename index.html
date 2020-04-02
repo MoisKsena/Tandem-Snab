@@ -106,22 +106,81 @@
 
     <article class="header__oder">
       <div class="header__oder-block">
-        <h2 class="header__oder-block-title">Создаём уникальную мебель&nbsp;в&nbsp;стиле&nbsp;Loft по вашей задумке</h2>
+        <h2 class="header__oder-block-title">Создаём уникальную мебель&nbsp;в&nbsp;стиле Loft по вашей задумке</h2>
         <div class="header__oder-block-text">
           <p>Гарантируем качество материалов и производства</p>
           <p>Выполняем работы в&nbsp;установленные сроки</p>
           <p>Предлагаем цены на 30% ниже&nbsp;рыночных</p>
         </div>
-
-        <a href="#feedback"><button class="btn header__oder-block-btn">Получить консультацию</button></a>
+        
+        <button class="btn header__oder-block-btn j-consult">Получить консультацию</button>
       </div>
+
+       <!-- </form> -->
+
+      <form method="post" id="consult" class="header__formletter m-consult" novalidate="novalidate">
+       
+        <div class="header__formletter-checkin">
+          <div class="header__formletter-personal" style="border: none;">
+            <div class="header__formletter-row">
+              <!-- <label for="name">Имя</label>  -->
+              <input id="name" type="text" name="name-consult" minlength="3" data-val="true" data-val-required="укажите ваше имя" class="feedback__formletter-personal--namefield" placeholder="Ваше имя*"/>
+              <span class="field-validation-valid" data-valmsg-for="name-consult" data-valmsg-replace="true"></span>
+            </div>
+            <div class="header__formletter-row">
+              <!-- <label for="tel">Телефон</label> -->
+              <input type="text" id="tel" name="tel-consult" 
+                data-inputmask="'mask': '+7 (999) 999-99-99'" inputmode="numeric"
+                class="feedback__formletter-personal--telfield" 
+                data-val="true" 
+                data-val-regex-pattern="\+7 \((\d{3})\) (\d{3})-(\d{2})-(\d{2})"
+                data-val-required="Введите номер телефона"
+                placeholder="+7 (___) ___–__–__*"
+                 />
+                <span class="field-validation-valid" data-valmsg-for="tel-consult" data-valmsg-replace="true"></span>
+            </div> 
+            <div class="header__formletter-row">
+              <input id='email' type="email" name="email-consult" class="feedback__formletter-personal--emailfield" 
+                data-val="true" 
+                data-val-required="укажите ваш e-mail"
+                placeholder="Почта*"
+              /> 
+              <span class="field-validation-valid" data-valmsg-for="email-consult" data-valmsg-replace="true"></span>
+            </div>
+
+            <button class="feedback__formletter-consent--btn m-consult">Получить консультацию</button>
+
+          </div>
+         
+ 
+        </div>
+      </form>
+
+      <div class="feedback__form-success m-active m-consult">
+        <button class="modal__content--close btn-close m-feedback" onclick=" $('.feedback__form-success').addClass('m-active'); $('.feedback__formletter').removeClass('m-active'); $('.header__oder-block').css('display', 'block');"></button>
+        <div class="feedback__form-success--content">
+          
+          <div class="feedback__form-success--text">
+            <h2 class="feedback__form-success--name">Спасибо!</h2>
+            <p class="feedback__form-success--sign m-bold">Перезвоним Вам в течение 10 мин<br />в рабочее время.</p>
+            <p class="feedback__form-success--sign">Мы работаем:<br />пн-пт 10:00 - 19:00<br />сб 11:00-17:00</p>
+          </div>
+          
+        </div>
+
+      </div>
+          <!-- </form> -->
+          
+        </div>
+      </div>
+      
     </article>
   </header>
 
   <section class="ideas" id="ideas">
     <div class="ideas__content">
 
-      <h2 class="ideas__content-text">Всё&nbsp;начинается с&nbsp;идеи создать уникальный интерьер</h2>
+      <h2 class="ideas__content-text m-content">Всё&nbsp;начинается&nbsp;с идеи создать уникальный интерьер</h2>
         <article class="ideas__content-inner">
           <div class="ideas__content-inner-block">
             <div class="ideas__content-inner-block m-block-1"></div>
@@ -506,7 +565,7 @@
                     </div>
                     <div class="swiper-slide">
                       <img class="swiper__ideas-foto" src="img/tables-2.jpg" alt="#">
-                      <div class="">Барные стулья и стол. Столешница и сидушки из сосны</div>
+                      <div class="swiper-slide-text">Барные стулья и стол. Столешница и сидушки из сосны</div>
                     </div>
                     <div class="swiper-slide">
                       <img class="swiper__ideas-foto" src="img/tables-3.jpg" alt="#">
