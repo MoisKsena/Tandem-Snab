@@ -104,7 +104,7 @@
     padding: 0;
     text-decoration: none;
     color: $green;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   &__burger-connection {
@@ -176,7 +176,7 @@
 
   &__link:hover {
     color: $green;
-    font-weight: 600;
+    font-weight: 500;
     padding: 10px 0;
   }
 
@@ -196,7 +196,7 @@
   }
 
   &__link.main-nav__item--active {
-    font-weight: 600;
+    font-weight: 500;
     color: $green;
   }
   

@@ -1,6 +1,7 @@
 .materials {
   padding: 0;
-  margin-top: 112px;
+  margin: 112px auto;
+  max-width: 1368px;
 
   @media (max-width: 768px) {
     margin-top: 40px;

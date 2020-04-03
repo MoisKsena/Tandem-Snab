@@ -1,7 +1,8 @@
 .instagram {
-  margin-top: 115px;
+  margin: 115px auto;
   padding: 0;
   position: relative;
+  max-width: 1368px;
 
   @media (max-width: 768px) {
     margin: 96px 24px 0;

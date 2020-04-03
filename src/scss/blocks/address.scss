@@ -1,8 +1,9 @@
 .address {
   display: flex;
-  width: 100%;
-  margin-top: 112px;
+  justify-content: center;
+  margin: 112px auto;
   padding: 0;
+  max-width: 1368px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -263,9 +264,10 @@
 }
 
 .feedback__formletter-consent--btn.m-consult {
-  width: 316px;
+  width: 177px;
   height: 56px;
-  margin-top: auto;
+  margin-left: 16px;
+  padding: 0;
 
   @media (max-width: 768px) {
     width: 100%;
