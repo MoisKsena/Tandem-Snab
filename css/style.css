@@ -1125,7 +1125,7 @@ svg path {
 
 .materials {
   padding: 0;
-  margin: 112px auto;
+  margin: 112px auto 0;
   max-width: 1368px; }
   @media (max-width: 768px) {
     .materials {
@@ -1722,7 +1722,7 @@ svg path {
   color: #232323;
   padding: 0;
   max-width: 1368px;
-  margin: 96px auto; }
+  margin: 96px auto 0; }
   @media (max-width: 980px) {
     .feedback {
       margin-top: 40px; } }
@@ -2289,7 +2289,7 @@ svg path {
 .delivery {
   padding: 0;
   max-width: 1368px;
-  margin: 112px auto; }
+  margin: 112px auto 0; }
   .delivery__headline {
     margin: 0;
     padding-left: 136px; }
@@ -2344,16 +2344,13 @@ svg path {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
     height: 121px; }
 
 .instagram {
-  margin: 115px auto;
+  margin: 115px auto 0;
   padding: 0;
   position: relative;
   max-width: 1368px; }
@@ -2401,7 +2398,7 @@ svg path {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 112px auto;
+  margin: 112px auto 0;
   padding: 0;
   max-width: 1368px; }
   @media (max-width: 768px) {
