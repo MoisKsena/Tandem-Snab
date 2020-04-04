@@ -100,30 +100,25 @@ svg path {
   text-align: center;
   border-radius: 26px;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 85px;
+  right: 10px;
   transition: background-color .3s, opacity .5s, visibility .5s;
-  transform: rotate(90deg);
+  //transform: rotate(45deg);
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
 }
 
 #buttonUp::after {
-  content: "\003C";
+  content: "\21E7";
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
+  font-size: 1.5em;
+  line-height: 47px;
   color: #fff;
   
 }
-
-// #buttonUp:hover {
-//   cursor: pointer;
-//   background-color: $green;
-// }
 
 #buttonUp:active {
   background-color: $green;

@@ -6,7 +6,7 @@
   color: $black;
   padding: 0;
   max-width: 1368px;
-  margin: 96px auto;
+  margin: 96px auto 0;
 
   @media (max-width: 980px) {
     margin-top: 40px;
@@ -122,6 +122,10 @@
       margin-right: 30px;
     }
 
+    @media (max-width: 980px) {
+      margin-left: 30px;
+    }
+
     @media (max-width: 768px) {
       margin: 0;
       width: 100%;
@@ -230,9 +234,6 @@
     display: flex;
     flex-direction: column;
 
-    @media (max-width: 768px) {
-    }
-    
     &--btn {
       width: 229px;
       height: 56px;
@@ -279,6 +280,12 @@
       top: 4px;
     }
 
+    &--confirm.m-address label::before {
+      @media (max-width: 980px) {
+        top: 30px;
+      }
+    }
+
     &--confirm input:checked + label:before {
       background: url(../img/checkbox.svg) no-repeat;
       background-size: cover;
@@ -286,6 +293,10 @@
 
     &--send {
       display: flex;
+
+      @media (max-width: 980px) {
+        padding-bottom: 24px;
+      }      
     }
 
     &--file {
@@ -447,7 +458,7 @@
 }
 
 .personal {
-  margin-top: 30px;
+  margin: 0;
   padding: 0;
   width: 70%;
 
@@ -460,6 +471,10 @@
   margin: 0;
   padding-left: 88px;
   padding-top: 19px;
+
+  @media (max-width: 768px) {
+    padding-left: 0;
+  }
 }
 
 .personal-text{

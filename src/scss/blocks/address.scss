@@ -1,7 +1,7 @@
 .address {
   display: flex;
   justify-content: center;
-  margin: 112px auto;
+  margin: 112px auto 0;
   padding: 0;
   max-width: 1368px;
 
@@ -30,11 +30,11 @@
     width: 55%;
 
     @media (max-width: 1200px) {
-      padding: 50px 40px 40px 60px;
+      padding: 40px 40px 40px 60px;
     }
 
     @media (max-width: 768px) {
-      padding: 0 24px 45px;
+      padding: 40px 24px 45px;
       margin: 0;
       width: 100%;
     }
@@ -180,11 +180,12 @@
 
     @media (max-width: 1024px) {
       flex-wrap: wrap;
+      margin-bottom: 24px;
     }
 
     @media (max-width: 768px) {
       margin-top: 40px;
-      justify-content: flex-end;
+      margin-bottom: 0;
     }
   }
 
@@ -230,6 +231,10 @@
   .feedback__formletter-personal--telfield.m-address {
     font-size: 16px;
     line-height: 24px;
+
+    @media (max-width: 768px) {
+      max-width: 200px;
+    }
   }
 
   .personal-social.m-address {
@@ -240,6 +245,10 @@
   .feedback__formletter-consent--confirm.m-address {
     display: flex;
     margin-right: 24px;
+
+    @media (max-width: 980px) {
+      align-items: flex-end;
+    }
 
     @media (max-width: 768px) {
       margin: 0;
@@ -259,6 +268,7 @@
     @media (max-width: 768px) {
       width: 174px;
       margin-bottom: 24px;
+      margin-top: 28px;
     }
   }
 }

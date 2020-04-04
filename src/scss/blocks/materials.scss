@@ -1,6 +1,6 @@
 .materials {
   padding: 0;
-  margin: 112px auto;
+  margin: 112px auto 0;
   max-width: 1368px;
 
   @media (max-width: 768px) {
@@ -13,6 +13,10 @@
     padding-bottom: 56px;
     padding-right: 0;
     margin: 0;
+
+    @media (max-width: 980px) {
+      padding-left: 60px;
+    }
 
     @media (max-width: 768px) {
       padding-left: 22px;

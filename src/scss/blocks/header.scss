@@ -181,6 +181,10 @@
   &__formletter-text {
     margin: 0;
     padding-left: 88px;
+
+    @media (max-width: 768px) {
+      padding-left: 0;
+    }
   }
 
   &__formletter-text-feedback {
@@ -202,6 +206,10 @@
     width: 100%;
     margin: 0;
     padding: 64px 0 0 88px;
+
+    @media (max-width: 768px) {
+      padding: 64px 0 0 0;
+    }
   }
 
   &__formletter-personal {
@@ -230,10 +238,6 @@
     margin: 0;
     height: 100%;
     width: 100%;
-
-    @media (max-width: 768px) {
-      padding: 24px;
-    }
   }
 
   &__oder-block-title {
@@ -242,7 +246,7 @@
     padding: 0;
 
     @media (max-width: 768px) {
-      padding: 31px 0 0;
+      padding: 10px 0 0;
     }
   }
 
