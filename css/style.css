@@ -2005,15 +2005,17 @@ svg path {
         visibility: hidden;
         position: absolute; }
       .feedback__formletter-consent--file .input__file-download {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
+        display: none;
         position: relative;
         border: 2px solid #232323;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
         padding: 0 4px; }
+        .feedback__formletter-consent--file .input__file-download.m-active {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
       .feedback__formletter-consent--file .input__file-button {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2022,11 +2024,11 @@ svg path {
             -ms-flex-align: center;
                 align-items: center; }
       .feedback__formletter-consent--file .input__file-button-text {
-        display: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         padding: 0 10px;
         margin: 0; }
-        .feedback__formletter-consent--file .input__file-button-text.m-active {
-          display: block; }
       .feedback__formletter-consent--file .input__file-button {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2143,7 +2145,7 @@ svg path {
 
 .personal {
   margin: 0;
-  padding: 0;
+  padding-top: 24px;
   width: 70%; }
   @media (max-width: 768px) {
     .personal {
