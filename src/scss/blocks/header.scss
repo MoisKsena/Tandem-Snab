@@ -170,12 +170,18 @@
     }
   } 
 
-  &__formletter {
+  &__form-success.m-consult {
     display: none;
   }
 
-  &__formletter.m-active {
+  &__form-success.m-consult.m-active {
     display: flex;
+    padding-top: 0;
+    margin: 0;
+  }
+
+  &__formletter.m-consult {
+    display: none;
   }
 
   &__formletter-text {

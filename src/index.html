@@ -119,7 +119,7 @@
 
         <!-- </form> -->
 
-        <form method="post" id="consult" class="header__formletter m-consult" novalidate="novalidate">
+        <form method="post" class="header__formletter m-consult" novalidate="novalidate">
           <div class="header__formletter-text">
             <p class="header__formletter-text-feedback">Перезвоним в течение <br />10 мин в рабочее время</p>
             <p class="header__formletter-text-sign">Работаем:<br />ПН—ПТ 10:00–19:00,<br />СБ 11:00–17:00</p>
@@ -143,7 +143,7 @@
 
               </div> 
 
-              <button class="feedback__formletter-consent--btn m-consult">ОТПРАВИТЬ</button>
+              <button class="feedback__formletter-consent--btn m-consult" id="consult">ОТПРАВИТЬ</button>
 
             </div>
           </div>
@@ -152,8 +152,8 @@
 
         </form>
 
-        <div class="feedback__form-success m-active m-consult">
-          <button class="modal__content--close btn-close m-feedback" onclick=" $('.feedback__form-success').addClass('m-active'); $('.feedback__formletter').removeClass('m-active'); $('.header__oder-block').css('display', 'block');"></button>
+        <div class="header__form-success m-consult">
+          <button class="modal__content--close btn-close m-feedback" onclick=" $('.header__form-success.m-consult').removeClass('m-active'); $('.header__oder-block').css('display', 'block');"></button>
           <div class="feedback__form-success--content">
             
             <div class="feedback__form-success--text">
@@ -172,7 +172,7 @@
       </article>
     </header>
 
-    <section class="ideas" id="ideas">
+    <section class="ideas j-nav-section" id="ideas">
       <div class="ideas__content">
 
         <h2 class="ideas__content-text m-content">Всё&nbsp;начинается&nbsp;с идеи, создать уникальный интерьер</h2>
@@ -1366,7 +1366,7 @@
       </div>
     </section>
 
-    <section class="materials" id="materials">
+    <section class="materials j-nav-section" id="materials">
 
       <div class="materials__inner">
         <article class="materials__content-block-wrapper">
@@ -1415,7 +1415,7 @@
       </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about  j-nav-section" id="about">
       
       <article class="about__gallery">
         <div class="about__gallery-wrapper">
@@ -1562,7 +1562,14 @@
                     <input name="file" type="file" id="input__file" class="input__file" multiple>
                     <label for="input__file" class="input__file-button">
                       <span class="input__file-icon-wrapper"><img class="input__file-icon" src="img/clip.svg" alt="Выбрать файл"></span>
-                      <span class="input__file-button-text">Выберите файл</span>
+                      <div class="input__file-download">
+                        <span class="input__file-button-text">Выберите файл</span>
+                        <a href="#" class="input__file_del">
+                          <svg width="10" height="10">
+                            <use xlink:href="img/sprite.svg#close"></use>
+                          </svg>
+                        </a>
+                      </div>
                     </label>
                   </div>
 
@@ -1725,7 +1732,7 @@
       </article>
     </section>
 
-    <section class="delivery" id="delivery">
+    <section class="delivery j-nav-section" id="delivery">
       <h2 class="delivery__headline">Доставка</h2>
 
       <div class="delivery__box">
@@ -1772,7 +1779,7 @@
       
     </section>
 
-    <section class="instagram">
+    <section class="instagram j-nav-section">
       <h2 class="instagram__title">Инстаграм</h2>
 
       <div class="instagram__btn-block">
@@ -1817,7 +1824,7 @@
       </div>
     </section>
 
-    <footer class="address" id="address">
+    <footer class="address j-nav-section" id="address">
       <div class="address__content">
         <h2 class="address__headline">Wood & Metal Lab</h2>
         <p class="address__sign">мастерская индивидуального производства мебели и&nbsp;предметов интерьера</p>
