@@ -630,12 +630,16 @@ svg path {
           width: 100%;
           padding: 0 0 24px;
           margin: 0; } }
-  .header__formletter {
+  .header__form-success.m-consult {
     display: none; }
-  .header__formletter.m-active {
+  .header__form-success.m-consult.m-active {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    padding-top: 0;
+    margin: 0; }
+  .header__formletter.m-consult {
+    display: none; }
   .header__formletter-text {
     margin: 0;
     padding-left: 88px; }
@@ -1039,6 +1043,8 @@ svg path {
   .about__gallery-demo-descr-title {
     margin: 0;
     padding: 0; }
+  .about__gallery-demo-descr-title::-moz-selection {
+    background: transparent; }
   .about__gallery-demo-descr-title::selection {
     background: transparent; }
   .about__gallery-demo-text-wrapper {
@@ -1998,6 +2004,16 @@ svg path {
         opacity: 0;
         visibility: hidden;
         position: absolute; }
+      .feedback__formletter-consent--file .input__file-download {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        border: 2px solid #232323;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 0 4px; }
       .feedback__formletter-consent--file .input__file-button {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2007,8 +2023,7 @@ svg path {
                 align-items: center; }
       .feedback__formletter-consent--file .input__file-button-text {
         display: none;
-        padding: 0 12px;
-        border: 2px solid #232323;
+        padding: 0 10px;
         margin: 0; }
         .feedback__formletter-consent--file .input__file-button-text.m-active {
           display: block; }
@@ -2093,9 +2108,6 @@ svg path {
       color: #232323; }
   .feedback__form-success.m-active {
     display: none; }
-  .feedback__form-success.m-consult {
-    padding-top: 0;
-    margin: 0; }
   .feedback__form-success.modal--open {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
