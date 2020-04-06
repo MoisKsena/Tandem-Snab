@@ -202,7 +202,8 @@
   
   &__icons {
     display: flex;
-    height: fit-content;
+    padding-top: 6px;
+    margin: 0;
 
     @media (max-width: 768px) { 
       display: none;
