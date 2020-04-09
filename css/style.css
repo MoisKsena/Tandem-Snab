@@ -903,9 +903,8 @@ svg path {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content; }
+    padding-top: 6px;
+    margin: 0; }
     @media (max-width: 768px) {
       .main-nav__icons {
         display: none; } }
@@ -1367,7 +1366,7 @@ svg path {
         padding: 40px 0 32px 24px;
         width: 100%; } }
   .ideas__content-text.m-content {
-    width: 55%; }
+    width: 57%; }
     @media (max-width: 768px) {
       .ideas__content-text.m-content {
         width: 100%; } }
@@ -1678,6 +1677,9 @@ svg path {
   .ideas__accordion-tab input, .ideas__accordion-tab-content {
     display: none; }
   .ideas__accordion-tab {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1711,7 +1713,8 @@ svg path {
     cursor: pointer;
     /* Вид курсора */
     outline: none; }
-  .ideas__accordion-tab-content {
+  .ideas__accordion-tab-content.m-active {
+    display: block;
     padding-right: 24px;
     /* Поля вокруг текста */
     width: 100%; }
