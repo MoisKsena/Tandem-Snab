@@ -1675,7 +1675,9 @@ svg path {
     padding-top: 32px;
     width: 100%; }
   .ideas__accordion-tab input, .ideas__accordion-tab-content {
-    display: none; }
+    display: none;
+    padding-right: 24px;
+    width: 100%; }
   .ideas__accordion-tab {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
