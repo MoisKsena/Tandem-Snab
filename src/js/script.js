@@ -62,13 +62,28 @@ $(window).scroll(function() {
   } else {
 
       $('a.main-nav__link', '#headerMenu').removeClass('main-nav__item--active');
-      //$('nav a:first').removeClass('main-nav__item--active');
       $('a.main-nav__link', '#headerMenu').eq(0).removeClass('main-nav__item--active');
 
   }
  
 }).scroll();
 }
+
+//мобильная верисия // ideas tabs open (всегда открыта первая секция)
+let firstTab = $('#fistSection').find('section', '.ideas__accordion-tab-content'); 
+firstTab.addClass('m-active');
+
+
+
+let openTabBtn = $('.ideas__accordion-tab');
+openTabBtn.on('click', event => {
+  event.preventDefault();
+
+  firstTab.removeClass('m-active');
+
+  $(event.currentTarget).find('section', '.ideas__accordion-tab-content').toggle('m-active'); 
+});
+
 
 //кнопка "Вверх"
 var btn = $('#buttonUp');
