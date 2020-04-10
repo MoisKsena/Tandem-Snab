@@ -1643,7 +1643,7 @@ svg path {
             transform: scaleY(1);
     -webkit-transition: all .7s ease-in-out;
     transition: all .7s ease-in-out;
-    opacity: .3; }
+    opacity: .15; }
   .ideas__container-effects-block:hover .ideas__container-effects-hoverblock {
     opacity: 1; }
   .ideas__content-idea-block-text {
@@ -1772,8 +1772,7 @@ svg path {
     padding: 0;
     position: relative;
     margin: 0;
-    width: 90%;
-    height: 631px; }
+    width: 90%; }
     @media (max-width: 1280px) {
       .feedback__form {
         padding: 30px;
