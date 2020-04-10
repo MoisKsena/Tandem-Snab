@@ -580,9 +580,6 @@ svg path {
             flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
     width: 1440px; }
     @media (max-width: 768px) {
       .header__menu {
