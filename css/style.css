@@ -537,9 +537,8 @@ svg path {
         line-height: 17px; }
       .header__headline--name.m-sign-city {
         font-size: 14px;
-        position: absolute;
-        right: 25px;
-        top: 47px; }
+        padding-top: 8px;
+        margin: 0; }
         @media (max-width: 768px) {
           .header__headline--name.m-sign-city {
             display: none; } }
@@ -911,6 +910,17 @@ svg path {
     .main-nav__icons--whatsapp {
       margin: 0;
       padding-right: 12px; }
+    .main-nav__icons--sign {
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
   .main-nav__icons svg {
     fill: #232323; }
   .main-nav__icons svg:hover {
@@ -920,8 +930,7 @@ svg path {
   color: black;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 22px; }
+  font-size: 18px; }
   .icon:hover {
     color: #2FA06A; }
   .icon.m-burger-address {
