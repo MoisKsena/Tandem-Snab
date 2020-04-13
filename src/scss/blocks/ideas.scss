@@ -244,26 +244,20 @@
   &__content-block-left-top,
   &__content-block-right-top {
     height: 256px;
-    padding-bottom: 8px;
-    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
     width: 100%;
   }
 
   &__content-block-center-top {
     height: 336px;
-    padding-bottom: 8px;
-    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
     width: 100%;
   }
 
   &__content-block-center-bottom {
     height: 352px;
-    width: 100%;
-  }
-
-  //hover-effect  img-block
-  #al-c {
-    display: table;
     width: 100%;
   }
 
@@ -282,7 +276,7 @@
   }
 
   &__container-effects {
-    list-style:none;
+    list-style: none;
     margin: 0;
     width: 100%;
     padding: 0;
@@ -309,8 +303,6 @@
     font-size: 16px;
     line-height: 20px;
     list-style-type: square;
-    //padding-top: 8px;
-    //margin-left: 18px;
   }
 
   &__container-effects-block {
@@ -320,24 +312,16 @@
     cursor: pointer;
   }
 
-  &__container-effects-hoverblock > div {
+  &__container-effects-hoverblock.m-active {
+    position: absolute;
+    display: flex;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  &__container-effects-hoverblock:hover > div {
-    position: absolute;
-    overflow: hidden;
     top: 0;
     left: 0;
   }
 
   &__container-effects-hoverblock {
-    opacity: 0;
-    display: flex;
+    display: none;
     align-items: center;
   }
 
@@ -361,14 +345,10 @@
     width: 100%;
   }
 
-  &__container-effects-block:hover img {
+  &__container-effects-block.m-active img {
     transform: scaleY(1);
     transition: all .7s ease-in-out;
     opacity: .15;
-  }
-
-  &__container-effects-block:hover .ideas__container-effects-hoverblock {
-    opacity: 1;
   }
 
   &__content-idea-block-text {
@@ -427,9 +407,9 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 0;
-    color: $black; /* Цвет текста */
+    color: $black;
     padding: 0;
-    margin-bottom: 24px; /* Расстояние между пунктами */
+    margin-bottom: 24px; 
   }
 
   .swiper-slide-text {
@@ -441,31 +421,26 @@
   }
 
   &__accordion-tab-title {
-    padding: 0 0 24px; /* Поля вокруг текста */
-    display: block; /* Блочный элемент */
-    text-transform: uppercase; /* Все буквы заглавные */
-    font-weight: bold; /* Жирное начертание */
-    cursor: pointer; /* Вид курсора */
+    padding: 0 0 24px; 
+    display: block;
+    text-transform: uppercase; 
+    font-weight: bold; 
+    cursor: pointer;
     outline: none;
   }
 
-  // &__accordion-tab-content {
-  //   padding-right: 24px; /* Поля вокруг текста */
-  //   width: 100%;
-  // }
-
   &__accordion-tab-content.m-active {
     display: block;
-    padding-right: 24px; /* Поля вокруг текста */
+    padding-right: 24px;
     width: 100%;
   }
 
   &__accordion-tab :checked + &__accordion-tab-title {
-    color: $green; /* Цвет текста */
+    color: $green; 
   }
   
   &__accordion-tab :checked ~ &__accordion-tab-content {
-    display: block; /* Показываем содержимое */
+    display: block;
     margin: auto;
     padding-bottom: 20px;
   }

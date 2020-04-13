@@ -82,8 +82,10 @@
 }
 
 .swiper__ideas-foto {
-  height: 312px;
-  width: 100%;
+  //height: 312px;
+  height: auto;
+  //width: 100%;
+  width: 312px;
 }
 
 .swiper-pagination.m-ideas-mobile {

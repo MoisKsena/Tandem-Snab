@@ -69,19 +69,29 @@ $(window).scroll(function() {
 }).scroll();
 }
 
+//десктоп...ideas-block
+$('.ideas__container-effects').hover(
+  function() {
+    $('.ideas__container-effects-block', this).addClass('m-active');
+    $('.ideas__container-effects-hoverblock', this).addClass('m-active');
+  }, 
+  function() {
+    $('.ideas__container-effects-hoverblock', this).removeClass('m-active');
+    $('.ideas__container-effects-block', this).removeClass('m-active');
+  }
+);
+
+
+
 //мобильная верисия // ideas tabs open (всегда открыта первая секция)
-let firstTab = $('#fistSection').find('section', '.ideas__accordion-tab-content'); 
-firstTab.addClass('m-active');
 
-
-
-let openTabBtn = $('.ideas__accordion-tab');
-openTabBtn.on('click', event => {
+$('.ideas__accordion-tab').on('click', event => {
   event.preventDefault();
 
-  firstTab.removeClass('m-active');
 
-  $(event.currentTarget).find('section', '.ideas__accordion-tab-content').toggle('m-active'); 
+  $('.ideas__accordion-tab > section.ideas__accordion-tab-content').fadeOut( "slow" );//removeClass('m-active');
+
+  $('section.ideas__accordion-tab-content', event.currentTarget).fadeIn( "slow" )//addClass('m-active'); 
 });
 
 
