@@ -74,9 +74,8 @@
 
       &.m-sign-city {
         font-size: 14px;
-        position: absolute;
-        right: 25px;
-        top: 47px;
+        padding-top: 8px;
+        margin: 0;
 
         @media (max-width: 768px) {
           display: none;
@@ -120,7 +119,7 @@
     padding: 13px 23px 0 48px;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: end;
+    //align-items: end;
     width: 1440px;
 
     @media (max-width: 768px) {

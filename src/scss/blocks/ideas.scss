@@ -364,7 +364,7 @@
   &__container-effects-block:hover img {
     transform: scaleY(1);
     transition: all .7s ease-in-out;
-    opacity: .3;
+    opacity: .15;
   }
 
   &__container-effects-block:hover .ideas__container-effects-hoverblock {
@@ -416,6 +416,8 @@
   &__accordion-tab input, 
   &__accordion-tab-content { 
     display: none; 
+    padding-right: 24px;
+    width: 100%;
   }
 
   &__accordion-tab {
