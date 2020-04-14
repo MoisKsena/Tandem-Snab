@@ -439,14 +439,16 @@ svg path {
   visibility: hidden;
   z-index: 1000; }
 
-#buttonUp::after {
-  content: "\21E7";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.5em;
-  line-height: 47px;
-  color: #fff; }
+.buttonUp__svg {
+  fill: #fff;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 20px;
+  position: relative;
+  top: 11px;
+  right: 1px;
+  height: 23px;
+  width: 20px; }
 
 #buttonUp:active {
   background-color: #2FA06A; }
@@ -516,31 +518,9 @@ svg path {
     width: 90%;
     bottom: 0;
     right: 0; }
-    .header__headline--name {
-      margin: 0;
-      text-align: center; }
-      .header__headline--name.m-logo {
-        font-family: "Prosto One", cursive;
-        font-size: 36px;
-        line-height: 44px;
-        color: #232323;
-        margin: 0;
-        padding: 0; }
-        @media (max-width: 768px) {
-          .header__headline--name.m-logo {
-            font-size: 28px; } }
-      .header__headline--name.m-sign {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 17px; }
-      .header__headline--name.m-sign-city {
-        font-size: 14px;
-        padding-top: 8px;
-        margin: 0; }
-        @media (max-width: 768px) {
-          .header__headline--name.m-sign-city {
-            display: none; } }
+    @media (max-width: 1400px) {
+      .header__headline {
+        height: 86%; } }
     @media (max-width: 414px) {
       .header__headline {
         background-size: 106%;
@@ -572,7 +552,7 @@ svg path {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 13px 23px 0 48px;
+    padding: 23px 23px 0 45px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -583,6 +563,10 @@ svg path {
     @media (max-width: 768px) {
       .header__menu {
         padding: 13px 24px 0; } }
+  .header__logo {
+    height: 57px; }
+    .header__logo img {
+      width: 135px; }
   .header__oder {
     background-color: white;
     display: -webkit-box;
@@ -762,28 +746,22 @@ svg path {
     top: 0;
     right: 0;
     margin: 0;
-    padding: 0;
+    padding-top: 16px;
+    padding-left: 19px;
     background-color: #E5E5E5;
     line-height: 1.5;
     z-index: 3; }
     @media (max-width: 768px) {
       .main-nav__burger-menu {
         display: none; } }
-  .main-nav__headline {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 12px;
-    margin: 0; }
+  .main-nav__logo {
+    padding: 0;
+    margin: 0;
+    height: 57px; }
+    .main-nav__logo img {
+      width: 135px; }
   .main-nav__burger-address {
-    padding: 43px 0 0 22px;
+    padding-top: 24px;
     margin: 0; }
   .main-nav__burger-address-city {
     font-size: 14px;
@@ -795,9 +773,9 @@ svg path {
     display: -ms-flexbox;
     display: flex;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 51px;
     padding-bottom: 34px;
-    padding-left: 22px;
+    padding-left: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -861,10 +839,9 @@ svg path {
         display: none; } }
   .main-nav__item {
     margin: 0;
-    padding-right: 42px;
+    padding-right: 36px;
     font-size: 24px;
     font-weight: 500;
-    line-height: 28px;
     color: #232323;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
@@ -898,12 +875,13 @@ svg path {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 6px;
+    padding: 0;
     margin: 0; }
     @media (max-width: 768px) {
       .main-nav__icons {
         display: none; } }
     .main-nav__icons--whatsapp {
+      height: 26px;
       margin: 0;
       padding-right: 12px; }
     .main-nav__icons--sign {
@@ -916,7 +894,9 @@ svg path {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      margin: 0;
+      padding-top: 5px; }
   .main-nav__icons svg {
     fill: #232323; }
   .main-nav__icons svg:hover {
@@ -1365,7 +1345,7 @@ svg path {
   .ideas__content-text.m-ideas {
     padding-top: 64px;
     margin: 0;
-    width: 67%; }
+    width: 68%; }
     @media (max-width: 768px) {
       .ideas__content-text.m-ideas {
         padding: 40px 0 32px 24px;
@@ -1381,14 +1361,12 @@ svg path {
     display: flex;
     text-align: left;
     margin: 0;
-    padding: 56px 24px 0;
-    height: 400px; }
+    padding: 56px 24px 0; }
     @media (max-width: 768px) {
       .ideas__content-inner {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        padding: 32px 24px 0;
-        height: auto; } }
+        padding: 32px 24px 0; } }
   .ideas__content-inner-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1567,7 +1545,7 @@ svg path {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
-    padding: 36px 23px 33px 53px; }
+    padding: 40px 87px 55px 88px; }
   .ideas__container-effects {
     list-style: none;
     margin: 0;
@@ -1628,8 +1606,8 @@ svg path {
   .ideas__container-effects-block.m-active img {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
-    -webkit-transition: all .7s ease-in-out;
-    transition: all .7s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
     opacity: .15; }
   .ideas__content-idea-block-text {
     font-family: "Montserrat", sans-serif;
@@ -2396,7 +2374,7 @@ svg path {
   .instagram__title {
     margin: 0;
     padding-left: 105px;
-    padding-bottom: 26px; }
+    padding-bottom: 56px; }
     @media (max-width: 768px) {
       .instagram__title {
         padding-left: 0;
@@ -2608,7 +2586,7 @@ svg path {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start;
-      padding-left: 22px;
+      padding: 0;
       margin: 0; }
   .address__content-icons svg {
     fill: #232323; }
