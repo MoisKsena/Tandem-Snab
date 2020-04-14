@@ -47,40 +47,9 @@
     width: 90%;
     bottom: 0;
     right: 0;
-
-    &--name {
-      margin: 0;
-      text-align: center;
-
-      &.m-logo {
-        font-family: $font-family-title;
-        font-size: 36px;
-        line-height: 44px;
-        color: $black;
-        margin: 0;
-        padding: 0;
-
-        @media (max-width: 768px) {
-          font-size: 28px;
-        }
-      }
-
-      &.m-sign {
-        font-family: $font-family;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 17px;
-      }
-
-      &.m-sign-city {
-        font-size: 14px;
-        padding-top: 8px;
-        margin: 0;
-
-        @media (max-width: 768px) {
-          display: none;
-        }
-      }
+    
+    @media (max-width: 1400px) {
+      height: 86%;
     }
 
     @media (max-width: 768px) {
@@ -116,7 +85,7 @@
   &__menu {
     display: flex;
     justify-content: space-between;
-    padding: 13px 23px 0 48px;
+    padding: 23px 23px 0 45px;
     flex-direction: row;
     flex-wrap: nowrap;
     //align-items: end;
@@ -125,6 +94,14 @@
     @media (max-width: 768px) {
       padding: 13px 24px 0;
     }
+  }
+
+  &__logo {
+    height: 57px;
+
+    & img {
+      width: 135px;
+    } 
   }
 
   &__oder {

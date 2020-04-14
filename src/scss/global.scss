@@ -109,15 +109,15 @@ svg path {
   z-index: 1000;
 }
 
-#buttonUp::after {
-  content: "\21E7";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.5em;
-  line-height: 47px;
-  color: #fff;
-  
+.buttonUp__svg {
+  fill: #fff;
+  transform: rotate(90deg);
+  width: 20px;
+  position: relative;
+  top: 11px;
+  right: 1px;
+  height: 23px;
+  width: 20px;
 }
 
 #buttonUp:active {

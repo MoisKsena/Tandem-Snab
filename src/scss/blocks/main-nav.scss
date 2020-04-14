@@ -43,7 +43,8 @@
     top: 0;
     right: 0;
     margin: 0;
-    padding: 0;
+    padding-top: 16px;
+    padding-left: 19px;
     background-color: $grey-bcg;
     line-height: 1.5;
     z-index: 3;
@@ -53,16 +54,18 @@
     }
   }
 
-  &__headline {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding-top: 12px;
+  &__logo {
+    padding: 0;
     margin: 0;
+    height: 57px;
+
+    & img {
+      width: 135px;
+    } 
   }
 
   &__burger-address {
-    padding: 43px 0 0 22px;
+    padding-top: 24px;
     margin: 0;
   }
 
@@ -76,9 +79,9 @@
   &__burger-list {
     display: flex; 
     margin: 0;
-    padding-top: 30px;
+    padding-top: 51px;
     padding-bottom: 34px;
-    padding-left: 22px;
+    padding-left: 0;
     flex-direction: column;
   }
 
@@ -156,10 +159,9 @@
   
   &__item {
     margin: 0;
-    padding-right: 42px;
+    padding-right: 36px;
     font-size: 24px;
     font-weight: 500;
-    line-height: 28px;
     color: $black;
     transition: all 0.5s ease-in-out;
   }
@@ -202,7 +204,7 @@
   
   &__icons {
     display: flex;
-    padding-top: 6px;
+    padding: 0;
     margin: 0;
 
     @media (max-width: 768px) { 
@@ -210,6 +212,7 @@
     }
 
     &--whatsapp{
+      height: 26px;
       margin: 0;
       padding-right: 12px;
     }
@@ -218,6 +221,8 @@
       align-items: flex-end;
       display: flex;
       flex-direction: column;
+      margin: 0;
+      padding-top: 5px;
     }
   }
 
